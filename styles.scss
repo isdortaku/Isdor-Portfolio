@@ -1225,7 +1225,7 @@ img{
 
   // makbook
 
-  @media only screen  and (min-width: 1400px) {
+  @media only screen and (min-width: 1400px) and (max-width: 1440px) {
 
     .banner .logo {
       height: 11vh;
@@ -1314,12 +1314,6 @@ p {
  
 }
 
-    .services .card {
-        width: 32.3%;
-        height: 59vh;
-        margin-bottom: 12px;
-    }
-
 
 .conter img {
   width: 73px;
@@ -1407,7 +1401,7 @@ p {
 }
 // media queries for ipad pro 
 
-  @media only screen and (min-width: 569px) and (max-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
 
     // banner//
  
@@ -1448,25 +1442,13 @@ p {
 
 .services .card {
   width: 31.3%;
-  height: 28vh;
+  height: 33vh;
   object-fit: cover;
-}
-
-.services .card-img-top {
-  
-  height: 11vh;
-  
-}
-
-.contact .info {
-    margin-left: 49px;
-    padding-right: 50px;
-    margin-bottom: -65px;
 }
 
   }
 
-  @media only screen  and (min-width: 769px) and (max-width:900px) {
+  @media only screen and (min-width:559px) and (max-width: 767px) {
     .services .card {
       width: 31.3%;
       height: 59vh;
@@ -1493,30 +1475,6 @@ p {
   margin-bottom: 12px;
 }
 
-
-.contact input {
-    width: 137%;
-    padding: 1px;
-    margin: -1px 0;
-    font-size: 15px;
-    background-color: #304463;
-    border-radius: 3px;
-    border: none;
-}
-
-.form {
-    padding: 2.3rem 2.2rem;
-    z-index: 10;
-    overflow: hidden;
-    position: relative;
-    width: 142%;
-}
-
-.contact .info {
-    margin-left: 49px;
-    padding-right: 50px;
-    margin-bottom: -65px;
-}
   }
 
   // media quries for small screens
