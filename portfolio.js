@@ -7,26 +7,7 @@ const links = document.querySelectorAll('.nav-links li');
 hamburger.addEventListener("click", () => {
 navlinks.classList.toggle('open');
 hamburger.classList.toggle('active');
-
+navlinks.classList.toggle('close');
 
 });
 
-// form 
-const inputs = document.querySelectorAll(".input");
-
-function focusFunc() {
-  let parent = this.parentNode;
-  parent.classList.add("focus");
-}
-
-function blurFunc() {
-  let parent = this.parentNode;
-  if (this.value == "") {
-    parent.classList.remove("focus");
-  }
-}
-
-inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunc);
-  input.addEventListener("blur", blurFunc);
-});

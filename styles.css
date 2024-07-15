@@ -203,28 +203,24 @@ body {
 }
 
 .put {
+  padding: 30px 0;
   background-color: #090910;
 }
 .put h2 {
   font-size: 24px;
-  padding: 35px 40px 0 40px;
+  padding: 35px 40px 30px 40px;
   margin-bottom: 0px;
   font-family: "JosefinSans-Regular";
   font-weight: bold;
   color: white;
 }
 .put .about {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   padding: 0 40px 40px;
   color: white;
 }
-.put .about .starts {
-  margin-left: 40px;
-}
 .put .about h3 {
   font-size: 24px;
+  padding-bottom: 15px;
   font-family: "JosefinSans-Regular";
 }
 .put .about span {
@@ -232,10 +228,10 @@ body {
 }
 .put .about p {
   font-size: 13px;
-  width: 80%;
-  padding-bottom: 15px;
+  width: 83.5%;
+  padding: 0px;
   font-family: "JosefinSans-Regular";
-  padding: 0;
+  margin-bottom: 25px;
 }
 .put .about a {
   text-decoration: none;
@@ -259,15 +255,6 @@ body {
   color: white;
   box-shadow: 0 0 10px #0cf;
   border: none;
-}
-.put .about .org {
-  margin: 15px 30px 20px 0px;
-  height: 267px;
-  width: 255px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-top: 50px;
-  border-radius: 50%;
 }
 
 .graft {
@@ -347,26 +334,26 @@ body {
 }
 
 .conter .image-section {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(#0cf, #d80aa8, #0cf, #d80aa8);
+  height: 55px;
+  width: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 15%;
   transform: translate(-50%, -50%);
   transition: 0.6s ease;
   overflow: hidden;
+  opacity: 100%;
 }
 
 .conter:hover .image-section {
   top: 5%;
-  height: 280px;
-  width: 280px;
+  height: 55px;
+  width: 55px;
   border-radius: 50%;
+  opacity: 100%;
 }
 
 h4 {
@@ -468,7 +455,7 @@ p {
 }
 
 .services {
-  padding: 30px 40px 85px 40px;
+  padding: 30px 40px 50px 40px;
   background-color: #090910;
 }
 .services h2 {
@@ -491,7 +478,7 @@ p {
   background-color: #fff;
   color: black;
 }
-.services .card-img-top {
+.services .photos {
   width: 100%;
   height: 24vh;
   -o-object-fit: cover;
@@ -499,25 +486,31 @@ p {
 }
 .services .card {
   width: 28.3%;
-  height: 58vh;
+  height: 56vh;
   border: none;
+  margin: 0 15px;
 }
 .services .cards-wraper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.services .card-body {
+  padding: 5px 9px;
 }
 .services h5 {
-  font-size: 17px;
+  font-size: 16px;
   font-family: "JosefinSans-Regular";
-  margin-top: -10px;
-  margin-left: -10px;
-  font-weight: bold;
   margin-bottom: 0;
+  font-weight: bold;
+  padding-top: 6px;
 }
 .services p {
-  font-size: 11px;
+  font-size: 12px;
   font-family: "JosefinSans-Regular";
-  margin-left: -10px;
+  margin-left: -9px;
+  margin-bottom: 18px;
+  margin-top: -13px;
 }
 .services span {
   color: #742296;
@@ -536,7 +529,7 @@ p {
 
 .contact {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px 40px;
   background-color: black;
@@ -564,46 +557,13 @@ p {
   font-size: 15px;
   font-family: "JosefinSans-Regular";
 }
-.contact input {
-  width: 69%;
-  padding: 1px;
-  margin: 6px 0;
-  font-size: 15px;
-  background-color: #304463;
-  border-radius: 3px;
-  border: none;
-}
 .contact .info {
-  margin-left: 100px;
-  padding-right: 50px;
-  margin-bottom: -65px;
+  margin-bottom: -20px;
 }
 .contact .info .fonti {
   font-size: 13px;
   font-family: "GreatVibes-Regular-webfont";
   color: white;
-  padding: 20px 0;
-}
-.contact a {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  font-size: 13px;
-  color: white;
-  padding: 5px 14px;
-  border-radius: 2px;
-  font-family: "JosefinSans-Regular";
-  background-color: #742296;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  margin: auto;
-}
-.contact a:hover {
-  background: #0cf;
-  color: white;
-  box-shadow: 0 0 10px #0cf;
-  border: none;
 }
 .contact .icons {
   display: flex;
@@ -620,56 +580,26 @@ p {
   align-items: center;
   margin: 2px;
 }
-
-.container {
-  position: relative;
+.contact .form {
   width: 100%;
-  min-height: 100vh;
-  padding: 2rem;
-  background-color: #fafafa;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.form {
-  width: 100%;
-  max-width: 820px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
-
-.contact-form {
+.contact .contact-form {
   position: relative;
 }
-
-.circle {
+.contact .circle {
   border-radius: 50%;
   background: linear-gradient(135deg, transparent 20%, #149279);
   position: absolute;
 }
-
-.circle.one {
-  width: 130px;
-  height: 130px;
-  top: 130px;
-  right: -40px;
-}
-
-.circle.two {
+.contact .circle.two {
   width: 80px;
   height: 80px;
   top: 10px;
   right: 30px;
 }
-
-.contact-form:before {
+.contact .contact-form:before {
   content: "";
   position: absolute;
   width: 26px;
@@ -679,52 +609,26 @@ p {
   top: 50px;
   left: -13px;
 }
-
-form {
-  padding: 2.3rem 2.2rem;
+.contact form {
+  padding: 30px 22px;
   z-index: 10;
   overflow: hidden;
   position: relative;
 }
-
-.title {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1;
-  margin-bottom: 0.7rem;
-}
-
-.input-container {
-  position: relative;
-  margin: 4px 0;
-}
-
-.input {
-  width: 100%;
+.contact .input {
+  width: 120%;
   outline: none;
   border: 2px solid #fafafa;
   background: none;
-  padding: 1px;
+  padding: 0px;
   color: #fff;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 15px;
   letter-spacing: 0.5px;
   border-radius: 5px;
   transition: 0.3s;
 }
-
-.contact input {
-  width: 100%;
-  padding: 0px;
-  margin: -5px 0;
-  font-size: 15px;
-  background-color: #304463;
-  border-radius: 3px;
-  border: none;
-}
-
-.fill {
+.contact .fill {
   margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: none;
@@ -733,7 +637,7 @@ form {
   padding: 5px 14px;
   border-radius: 2px;
   font-family: "JosefinSans-Regular";
-  background-color: transparent;
+  background-color: #742296;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -742,115 +646,77 @@ form {
   justify-content: center;
   align-items: center;
 }
-
-.btn:hover {
-  background-color: #0cf;
+.contact a:hover {
+  background: #0cf;
   color: white;
+  box-shadow: 0 0 10px #0cf;
+  border: none;
+}
+.contact .form-control {
+  display: block;
+  width: 100%;
+  padding: 5px 78px 5px 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: -8px;
+}
+.contact textarea {
+  resize: vertical;
+  width: 100%;
+  font-size: 14px;
+  margin: 11px 0 7px 0;
+  padding: 5px 1px;
+}
+.contact .square {
+  position: absolute;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(181%, 11%);
+  opacity: 0.2;
 }
 
-@media (max-width: 850px) {
-  .form {
-    grid-template-columns: 1fr;
-  }
-  .contact-info:before {
-    bottom: initial;
-    top: -75px;
-    right: 65px;
-    transform: scale(0.95);
-  }
-  .contact-form:before {
-    top: -13px;
-    left: initial;
-    right: 70px;
-  }
-  .square {
-    transform: translate(140%, 43%);
-    height: 350px;
-  }
-  .big-circle {
-    bottom: 75%;
-    transform: scale(0.9) translate(-40%, 30%);
-    right: 50%;
-  }
-  .text {
-    margin: 1rem 0 1.5rem 0;
-  }
-  .social-media {
-    padding: 1.5rem 0 0 0;
-  }
-}
-@media (max-width: 480px) {
-  .container {
-    padding: 1.5rem;
-  }
-  .contact-info:before {
-    display: none;
-  }
-  .square,
-  .big-circle {
-    display: none;
-  }
-  form,
-  .contact-info {
-    padding: 1.7rem 1.6rem;
-  }
-  .text,
-  .information,
-  .social-media p {
-    font-size: 0.8rem;
-  }
-  .title {
-    font-size: 1.15rem;
-  }
-  .social-icons a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-  .icon {
-    width: 23px;
-  }
-  .input {
-    padding: 0.45rem 1.2rem;
-  }
-  .btn {
-    padding: 0.45rem 1.2rem;
-  }
-}
 .footer {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   background-color: #021a2f;
   color: white;
-  padding: 10px;
+  padding: 7px;
 }
 .footer h4 {
   font-size: 10px;
   font-family: "JosefinSans-Regular";
-}
-.footer i {
-  font-size: 25px;
-  padding: 10px;
+  margin-bottom: 0;
 }
 
-@media only screen and (min-width: 1400px) and (max-width: 1440px) {
+@media only screen and (min-width: 1400px) and (max-width: 1540px) {
   .banner .logo {
-    height: 11vh;
-    width: 130px;
+    height: 10vh;
+    width: 206px;
   }
   .banner .navi a {
-    font-size: 24px;
+    padding: 8px;
+    font-size: 26px;
   }
   .banner h1 {
     font-size: 50px;
     margin-top: 108px;
   }
   .banner .wiw {
-    height: 355px;
-    width: 355px;
-    margin-top: 50px;
+    height: 350px;
+    width: 350px;
+    margin-top: 32px;
   }
   .banner {
     padding: 45px 40px 68px 46px;
@@ -858,11 +724,11 @@ form {
   }
   .banner .kill {
     font-size: 25px;
-    padding: 13px 25px;
+    padding: 16px 28px;
   }
   .banner .gud {
     font-size: 25px;
-    padding: 13px 14px;
+    padding: 16px 17px;
   }
   .put .about p {
     font-size: 18px;
@@ -875,7 +741,7 @@ form {
   }
   .put h2 {
     font-size: 30px;
-    padding: 44px 40px 0 40px;
+    padding: 44px 40px 30px 40px;
   }
   .put .about a {
     font-size: 18px;
@@ -887,7 +753,7 @@ form {
   }
   .conter {
     height: 317px;
-    width: 313px;
+    width: 260px;
   }
   p {
     font-size: 16px;
@@ -899,7 +765,7 @@ form {
     width: 73px;
   }
   .graft h2 {
-    font-size: 49px;
+    font-size: 40px;
   }
   .graft {
     padding: 60px 40px;
@@ -915,6 +781,14 @@ form {
     font-size: 18px;
     padding: 10px;
   }
+  .services .photos {
+    width: 100%;
+    height: 16vh;
+  }
+  .services .card {
+    width: 28.3%;
+    height: 31vh;
+  }
   .services h2 {
     font-size: 34px;
   }
@@ -925,10 +799,12 @@ form {
     font-size: 20px;
   }
   .contact h3 {
-    font-size: 49px;
+    font-size: 39px;
+    margin-left: 9px;
   }
   .contact .line {
-    width: 181px;
+    width: 212px;
+    margin-left: 9px;
   }
   .contact input {
     width: 138%;
@@ -947,13 +823,23 @@ form {
   .contact .info {
     margin-left: 1px;
     padding-right: 50px;
-    margin-bottom: -65px;
+    margin-bottom: 0px;
+  }
+  .contact {
+    padding: 30px 40px;
+  }
+  .contact .form-control {
+    width: 127%;
+  }
+  .contact textarea {
+    width: 130%;
+    font-size: 14px;
   }
   .footer h4 {
     font-size: 12px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 900px) {
+@media only screen and (max-width: 769px) {
   .banner .wiw {
     height: 245px;
     width: 245px;
@@ -965,14 +851,9 @@ form {
     font-size: 9px;
     width: 98%;
   }
-  .put .about .org {
-    margin: 15px 30px 20px 0px;
-    height: 255px;
-    width: 255px;
-  }
   .conter {
-    height: 224px;
-    width: 135px;
+    height: 228px;
+    width: 141px;
   }
   .services .card {
     width: 31.3%;
@@ -981,7 +862,7 @@ form {
        object-fit: cover;
   }
 }
-@media only screen and (min-width: 559px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .services .card {
     width: 31.3%;
     height: 59vh;
@@ -997,8 +878,17 @@ form {
   }
   .services .card {
     width: 32.3%;
-    height: 34vh;
+    height: 29vh;
     margin-bottom: 12px;
+  }
+  .services .photos {
+    width: 100%;
+    height: 12vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .services p {
+    font-size: 14px;
   }
 }
 @media (max-width: 575.98px) {
@@ -1021,32 +911,27 @@ form {
     display: none;
   }
   .banner .wiw {
-    display: none;
+    display: flex;
+    margin: auto;
+    margin-top: 38px;
   }
   .banner .name {
     flex-direction: column;
   }
   .banner h1 {
-    font-size: 27px;
+    font-size: 30px;
     margin-top: 32px;
     padding-bottom: 28px;
-  }
-  .put .about {
-    flex-direction: column;
   }
   .put .about {
     padding: 0 20px 25px;
   }
   .put .about p {
     font-size: 14px;
-    width: 100%;
-  }
-  .put .about .org {
-    margin: auto;
-    padding: 22px;
+    width: 95%;
   }
   .put h2 {
-    padding: 35px 20px 0 20px;
+    padding: 8px 20px 24px 20px;
   }
   .conter {
     height: 235px;
@@ -1057,57 +942,64 @@ form {
     padding: 50px 20px;
   }
   .services {
-    padding: 30px 20px 85px 20px;
+    padding: 30px 20px 30px 20px;
   }
   .cards-wraper {
     flex-direction: column;
-    width: 50%;
+    width: 100%;
   }
   .services .card {
-    width: 197.3%;
-    height: 46vh;
-    margin-bottom: 12px;
+    width: 99.3%;
+    height: 48vh;
+    margin-bottom: 22px;
+  }
+  .services p {
+    font-size: 17px;
+  }
+  .services h5 {
+    font-size: 21px;
+    padding-top: 0px;
+  }
+  .services a {
+    font-size: 16px;
+    padding: 7px;
   }
   .contact {
     padding: 25px 20px;
   }
   .contact {
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
   .contact .info {
+    margin-bottom: -20px;
+    margin-left: -47px;
+  }
+  .contact form {
+    padding: 23px 0px;
+  }
+  .contact .form-control {
+    font-size: 19px;
+  }
+  .contact .info {
+    margin-left: -100px;
+  }
+  .contact textarea {
+    font-size: 19px;
+    padding: 3px 10px;
+    margin-bottom: 6px;
+  }
+  .contact h3 {
     margin-left: 0px;
   }
-  .circle {
-    border-radius: 75%;
-    background: linear-gradient(135deg, transparent 20%, #149279);
-    position: absolute;
-    padding: 0;
-    margin-left: -102px;
-    display: none;
+  .contact .line {
+    margin: -16px 0 25px 0px;
   }
   .contact {
     flex-direction: column;
-  }
-  .contact input {
-    width: 115%;
-  }
-  .input {
-    width: 109%;
-  }
-  .contact a {
-    width: 107%;
-  }
-  .contact .info {
-    margin-left: 0px;
-    padding-right: 71px;
-    margin-bottom: -37px;
-  }
-  form, .contact-info {
-    margin-left: -41px;
-  }
-  .contact input {
-    padding: 6px;
-    margin: 0px 0;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 475.98px) {
@@ -1122,5 +1014,8 @@ form {
   .nav-links {
     height: 86vh;
     width: 94%;
+  }
+  .contact .info {
+    margin-left: -37px;
   }
 }/*# sourceMappingURL=styles.css.map */
