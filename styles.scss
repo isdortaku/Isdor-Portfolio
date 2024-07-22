@@ -726,8 +726,8 @@ img{
     justify-content: space-between;
 
     i{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid #742296;
     display: inline-flex;
@@ -906,274 +906,274 @@ textarea {
 
   
 // media queries for small phones 
-// @media (max-width: 475.98px) {
+@media (max-width: 475.98px) {
 
-//   .services .card {
-//     margin-bottom: 52px;
-// }
+  .services .card {
+    margin-bottom: 52px;
+}
 
-// .hamburger{
-//   right: 5%;
-//   top: 9%;
-//   display: flex;
-// }
+.hamburger{
+  right: 5%;
+  top: 9%;
+  display: flex;
+}
 
-// .nav-links {
-//   height: 86vh;
-//   width: 94%;
-// }
+.nav-links {
+  height: 86vh;
+  width: 94%;
+}
 
-// .contact .info {
-//   margin-left: -37px;
-// }
+.contact .info {
+  margin-left: -37px;
+}
 
-// }
+}
 
-// @media (max-width: 575.98px) {
+@media (max-width: 575.98px) {
 
-//   // banner 
+  // banner 
 
-//   .hamburger{
-//     right: 8%;
-//     top: 8%;
-//     display: flex;
-//     flex-direction: column;
-//   }
+  .hamburger{
+    right: 8%;
+    top: 8%;
+    display: flex;
+    flex-direction: column;
+  }
 
-//   .line {
-//     width: 28px;
-//     height: 2px;
-//     background: white;
-//     margin: 3px;
-// }
+  .line {
+    width: 28px;
+    height: 2px;
+    background: white;
+    margin: 3px;
+}
 
-//   .banner {
-//     padding: 25px 20px 50px 20px;
-// }
+  .banner {
+    padding: 25px 20px 50px 20px;
+}
 
-//   .banner .navi a {
-//     display: none;
-// }
+  .banner .navi a {
+    display: none;
+}
 
-// .banner .wiw {
-//   display: flex;
-//     margin: auto;
-//     margin-top: 38px;
-// }
+.banner .wiw {
+  display: flex;
+    margin: auto;
+    margin-top: 38px;
+}
 
-// .banner .name {
-//   flex-direction: column;
-// }
+.banner .name {
+  flex-direction: column;
+}
 
-// .banner h1 {
-//   font-size: 30px;
-//   margin-top: 32px;
-//   padding-bottom: 28px;
+.banner h1 {
+  font-size: 30px;
+  margin-top: 32px;
+  padding-bottom: 28px;
   
-// }
+}
 
-// // about us
+// about us
 
-// .put .about {
-//   padding: 0 20px 25px;
+.put .about {
+  padding: 0 20px 25px;
 
-// }
+}
 
-// .put .about p {
-//   font-size: 14px;
-//   width: 95%;
+.put .about p {
+  font-size: 14px;
+  width: 95%;
  
-// }
+}
 
 
 
-// .put h2 {
-//   padding: 8px 20px 24px 20px;
-// }
+.put h2 {
+  padding: 8px 20px 24px 20px;
+}
 
-// // skills
-// .conter {
-//   height: 235px;
-//   width: 45%;
-//   margin: 0px 0px 11px 11px;
-// }
+// skills
+.conter {
+  height: 235px;
+  width: 45%;
+  margin: 0px 0px 11px 11px;
+}
 
-// .graft {
-//   padding: 50px 20px;
+.graft {
+  padding: 50px 20px;
 
-// }
+}
 
-// // cards
+// cards
 
-// .services {
-//   padding: 30px 20px 30px 20px;
-// }
+.services {
+  padding: 30px 20px 30px 20px;
+}
 
-// .cards-wraper{
-//   flex-direction: column;
-//   width:100%;
-// }
+.cards-wraper{
+  flex-direction: column;
+  width:100%;
+}
 
-// .services .card {
-//   width: 99.3%;
-//   height: 48vh;
-//   margin-bottom: 22px;
+.services .card {
+  width: 99.3%;
+  height: 48vh;
+  margin-bottom: 22px;
 
-// }
+}
 
-// .services p {
-//   font-size: 17px;
-// }
+.services p {
+  font-size: 17px;
+}
 
-// .services h5 {
-//   font-size: 21px;
-//   padding-top: 0px;
-// }
+.services h5 {
+  font-size: 21px;
+  padding-top: 0px;
+}
 
 
-// .services a {
-//   font-size: 16px;
-//   padding: 7px;
-// }
-// // form
+.services a {
+  font-size: 16px;
+  padding: 7px;
+}
+// form
 
-// .contact {
-//   padding: 25px 20px;
+.contact {
+  padding: 25px 20px;
  
-// }
+}
 
-// .contact {
-//   flex-direction: column;
-//   align-items:center;
-//   justify-content: space-between;
-// }
+.contact {
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+}
 
 
-// .contact .info {
-//   margin-bottom: -20px;
-//   margin-left: -47px;
-// }
+.contact .info {
+  margin-bottom: -20px;
+  margin-left: -47px;
+}
 
-// .contact form {
-//   padding: 23px 0px;
+.contact form {
+  padding: 23px 0px;
   
-// }
+}
 
-// .contact .form-control {
-//   font-size: 19px;
+.contact .form-control {
+  font-size: 19px;
   
-// }
+}
 
-// .contact .info {
-//   margin-left: -100px;
-// }
+.contact .info {
+  margin-left: -100px;
+}
 
-// .contact textarea {
-//   font-size: 19px;
-//   padding: 3px 10px;
-//   margin-bottom: 6px;
-// }
+.contact textarea {
+  font-size: 19px;
+  padding: 3px 10px;
+  margin-bottom: 6px;
+}
 
-// .contact h3 {
-//   margin-left: 0px;
-// }
+.contact h3 {
+  margin-left: 0px;
+}
 
-// .contact .line {
-//   margin: -16px 0 25px 0px;
-// }
+.contact .line {
+  margin: -16px 0 25px 0px;
+}
 
-// .contact {
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// }
+.contact {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-// .contact textarea {
-//   font-size: 16px;
-//   padding: 3px 0px;
-//   margin-bottom: 6px;
-// }
+.contact textarea {
+  font-size: 16px;
+  padding: 3px 0px;
+  margin-bottom: 6px;
+}
 
-// }
+}
 
-// @media only screen and (min-width:576px) and (max-width: 768px) {
-//   .services .card {
-//     width: 31.3%;
-//     height: 59vh;
+@media only screen and (min-width:576px) and (max-width: 768px) {
+  .services .card {
+    width: 31.3%;
+    height: 59vh;
     
-// }
+}
 
-// .services .card {
-//   width: 31.3%;
-//   height:36vh;
+.services .card {
+  width: 31.3%;
+  height:36vh;
   
-// }
+}
 
-// .contact .info {
-//   margin-left: 0px;
-//   padding-right: 50px;
-//   margin-bottom: -65px;
-// }
+.contact .info {
+  margin-left: 0px;
+  padding-right: 50px;
+  margin-bottom: -65px;
+}
 
 
-// .services .card {
-// width: 32.3%;
-// height: 29vh;
-// margin-bottom: 12px;
-// }
-// .services .photos {
-//   width: 100%;
-//   height: 12vh;
-//   -o-object-fit: cover;
-//   object-fit: cover;
-// }
+.services .card {
+width: 32.3%;
+height: 29vh;
+margin-bottom: 12px;
+}
+.services .photos {
+  width: 100%;
+  height: 12vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 
-// .services p {
-// font-size: 14px;
+.services p {
+font-size: 14px;
 
-// }
+}
 
-// }
+}
 
-// @media only screen and (min-width: 991px) and (max-width: 1024px){
+@media only screen and (min-width: 992px) and (max-width: 1365px){
 
-//   banner//
+  banner//
 
-//   .banner .wiw {
-//     height: 255px;
-//     width: 255px;
+  .banner .wiw {
+    height: 255px;
+    width: 255px;
    
-// }
+}
 
-// .banner h1 {
-//   font-size: 35px;
-// }
+.banner h1 {
+  font-size: 35px;
+}
 
-// // about 
+// about 
 
-// .put .about p {
-//   font-size: 9px;
-//   width: 98%;
+.put .about p {
+  font-size: 9px;
+  width: 98%;
 
-// }
+}
 
-// // skills 
-// .conter {
-// height: 228px;
-// width: 141px;
+// skills 
+.conter {
+height: 228px;
+width: 141px;
 
-// }
+}
 
 
-// // cards 
+// cards 
 
-// .services .card {
-// width: 31.3%;
-// height: 33vh;
-// object-fit: cover;
-// }
+.services .card {
+width: 31.3%;
+height: 33vh;
+object-fit: cover;
+}
 
-// }
+}
 
 
 // @media only screen and (min-width: 1366px) and (max-width: 1400px){
@@ -1379,251 +1379,309 @@ textarea {
 // }
 
 
-// @media only screen and  (min-width: 1401px)  and  (max-width: 1540px) {
+@media only screen and  (min-width: 1366px) and  (max-width: 1600px)  {
 
-//   .banner .logo {
-//     height: 10vh;
-//     width: 206px;
-// }
+  .banner .logo {
+    height: 10vh;
+    width: 206px;
+}
 
 
-// .banner .navi a {
-// padding: 8px;
-// font-size: 26px;
-// }
+.banner .navi a {
+padding: 8px;
+font-size: 26px;
+}
 
-// .banner h1 {
-// font-size: 50px;
-// margin-top: 108px;
+.banner h1 {
+font-size: 50px;
+margin-top: 108px;
 
-// }
-
-// // .banner .wiw {
-// //   height: 355px;
-// //   width: 355px;
-// //   margin-top: 50px;
-
-// //   }
+}
 
 // .banner .wiw {
-//   height: 350px;
-//   width: 350px;
-//   margin-top: 32px;
-// }
+//   height: 355px;
+//   width: 355px;
+//   margin-top: 50px;
 
-// .banner {
-//   padding: 45px 40px 68px 40px;
-//   background-color: #000;
-// }
+//   }
 
-// .banner .kill {
-// font-size: 25px;
-// padding: 16px 28px;
-// }
+.banner .wiw {
+  height: 350px;
+  width: 350px;
+  margin-top: 32px;
+}
 
-// .banner .gud {
-// font-size: 25px;
-// padding: 16px 17px;
-// }
+.banner {
+  padding: 45px 40px 68px 40px;
+  background-color: #000;
+}
 
-// // about 
+.banner .kill {
+font-size: 25px;
+padding: 16px 28px;
+}
 
-// .put .about p {
-// font-size: 18px;
-// width: 85%;
-// margin-bottom: 40px;
+.banner .gud {
+font-size: 25px;
+padding: 16px 17px;
+}
 
-// }
+// about 
 
-// .put .about .org {
-// height: 332px;
-// width: 331px;
+.put .about p {
+font-size: 18px;
+width: 85%;
+margin-bottom: 40px;
 
-// }
+}
 
-// .put h2 {
-// font-size: 30px;
-// padding: 44px 40px 30px 40px;
+.put .about .org {
+height: 332px;
+width: 331px;
 
-// }
+}
 
-// .put .about a {
-// font-size: 18px;
-// padding: 9px 12px;
-// }
+.put h2 {
+font-size: 30px;
+padding: 44px 40px 30px 40px;
 
-// .put .about h3 {
-// font-size: 24px;
-// font-family: "JosefinSans-Regular";
-// }
+}
 
-// // skills 
+.put .about a {
+font-size: 18px;
+padding: 9px 12px;
+}
 
-// .conter {
-// height: 317px;
-// width: 260px;
-// }
+.put .about h3 {
+font-size: 24px;
+font-family: "JosefinSans-Regular";
+}
 
-// p {
-// font-size: 16px;
+// skills 
 
-// }
+.conter {
+height: 317px;
+width: 260px;
+}
 
-// .nice {
-// font-size: 37px;
+p {
+font-size: 16px;
 
-// }
+}
 
+.nice {
+font-size: 37px;
 
-// .conter img {
-// width: 73px;
-
-// }
-
-// .graft h2 {
-// font-size: 40px;
-// }
-
-// .graft {
-// padding: 60px 40px;
-
-// }
-
-// // pronjects 
-// .services p {
-// font-size: 21px;
-// }
-
-// .services h5 {
-// font-size: 28px;
-// margin-top: 7px;
-
-// }
-
-// .services a {
-// font-size: 18px;
-// padding: 10px;
-
-// }
+}
 
 
-// .services .photos {
-// width: 100%;
-// height: 16vh;
+.conter img {
+width: 73px;
 
-// }
+}
+
+.graft h2 {
+font-size: 40px;
+}
+
+.graft {
+padding: 60px 40px;
+
+}
+
+// pronjects 
+.services p {
+font-size: 21px;
+}
+
+.services h5 {
+font-size: 28px;
+margin-top: 7px;
+
+}
+
+.services a {
+font-size: 18px;
+padding: 10px;
+
+}
 
 
-// .services .card {
-//   width: 33.3%;
-//   height: 36vh;
-// }
+.services .photos {
+width: 100%;
+height: 16vh;
 
-// .services h2 {
-// font-size: 34px;
-// }
-
-// .services p {
-//   font-size: 27px; 
-//   margin-bottom: 28px;
-// }
+}
 
 
-// .services h2 .line1 {
-// width: 121px;
-// }
+.services .card {
+  width: 33.3%;
+  height: 42vh;
+}
 
-// .services h5 {
-//   font-size: 36px;
-//   margin-top: 7px;
-// }
+.services h2 {
+font-size: 34px;
+}
 
-// // form 
-// .contact p {
-// font-size: 20px;
+.services p {
+  font-size: 27px; 
+  margin-bottom: 28px;
+}
 
-// }
 
-// .contact h3 {
-// font-size: 39px;
+.services h2 .line1 {
+width: 121px;
+}
 
-// }
+.services h5 {
+  font-size: 36px;
+  margin-top: 7px;
+}
 
-// .contact .line {
-// width: 212px;
-// }
+// form 
+.contact p {
+font-size: 20px;
 
-// .contact input {
-// width: 138%;
-// padding: 8px;
-// margin: 4px 0;
+}
 
-// }
+.contact h3 {
+font-size: 39px;
 
-// .contact a {
-// // font-size: 23px;
-// width: 110%;
-// padding: 10px 25px;
-// }
+}
 
-// .contact .fill {
-//   font-size: 15px;
-//   padding: 7px 14px;
+.contact .line {
+width: 212px;
+}
+
+.contact input {
+width: 138%;
+padding: 8px;
+margin: 4px 0;
+
+}
+
+.contact a {
+// font-size: 23px;
+width: 110%;
+padding: 10px 25px;
+}
+
+.contact .fill {
+  font-size: 15px;
+  padding: 7px 14px;
   
-// }
+}
 
 
-// .input {
-// width: 111%;
-// padding: 17px;
-// }
+.input {
+width: 111%;
+padding: 17px;
+}
 
 
-// .contact .info {
-// margin-left: 1px;
-// padding-right: 50px;
-// margin-bottom:0px;
-// }
+.contact .info {
+margin-left: 1px;
+padding-right: 50px;
+margin-bottom:0px;
+}
 
 
-// .contact {
+.contact {
 
-// padding: 30px 40px;
+padding: 30px 40px;
 
-// }
-// .contact .form-control {
-// width: 127%;
+}
+.contact .form-control {
+width: 127%;
 
-// }
+}
 
-// .contact .form-control {
-//   padding: 8px 100px 8px 7px;
+.contact .form-control {
+  padding: 8px 100px 8px 7px;
  
+}
+
+
+
+.contact textarea {
+  width: 130%;
+  font-size: 14px;
+  padding: 3px 1px 19px 2px;
+
+}
+// footer 
+.footer h4 {
+font-size: 12px;
+
+}
+
+ .contact form {
+    padding: 34px 80px;
+}
+
+    
+
+    .contact textarea {
+    resize: vertical;
+    width: 129%;
+    font-size: 16px;
+    margin: 11px 0 7px 0;
+    padding: 1px 1px 25px 1px;
+}
+
+    .contact .fill {
+        font-size: 16px;
+        padding: 9px 81px;
+        width: 129%;
+    }
+
+    .contact .line {
+    width: 192px;  
+}
+
+.contact .form-control {
+    padding: 9px 138px 9px 7px;
+    font-size: 15px;
+    
+}
+
+}
+
+
+// /* Media query for tablets (e.g., iPad) */
+// @media (min-width: 768px) {
+//   .container {
+//     padding: 0 40px;
+//     /* Adjust padding for larger screens */
+//   }
 // }
 
-
-
-// .contact textarea {
-//   width: 130%;
-//   font-size: 14px;
-//   padding: 3px 1px 19px 2px;
-
-// }
-// // footer 
-// .footer h4 {
-// font-size: 12px;
-
+// /* Media query for small desktops and laptops */
+// @media (min-width: 1024px) {
+//   .container {
+//     max-width: 1400px;
+//     /* Increase maximum width for larger screens */
+//   }
 // }
 
+// /* Media query for large desktops and wide screens */
+// @media (min-width: 1440px) {
+//   .container {
+//     max-width: 1600px;
+//     /* Further increase maximum width for very large screens */
+//   }
 // }
 
-
-// Small Screens (Smartphones)
-// 320px: The minimum width for most smartphones in portrait orientation.
-// 480px: A common width for many smartphones in landscape orientation.
-// Tablets
-// 600px: A common breakpoint for small/mini tablets in portrait mode.
-//px: A common breakpoint for full-sized tablets in portrait mode.
-// Laptops and Desktops
-// 992px: A common breakpoint for smaller laptop/desktop screens.
-// 1200px: A common breakpoint for larger desktop screens.
+// /* Media query for smaller screens such as smartphones */
+// @media (max-width: 767px) {
+//   .container {
+//     padding: 0 10px;
+//     /* Reduce padding for smaller screens */
+//   }
+  
+//   /* Example of adjusting column layout for smaller screens */
+//   .column {
+//     width: 100%;
+//     /* Make columns stack vertically */
+//   }
+// }
