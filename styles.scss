@@ -1170,6 +1170,100 @@ object-fit: cover;
 
 }
 
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px){
+
+  .banner h1 {
+    // font-size: 44px;
+    font-size: 54px;
+    margin-top: 105px;
+}
+
+.banner .wiw {
+  height: 366px;
+  width: 364px;
+}
+
+
+.banner .kill {
+  padding: 10px 19px;
+}
+
+
+.banner .gud {
+  padding: 10px 10px;
+}
+
+.banner .navi a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-family: "JosefinSans-Regular";
+  font-size: 23px;
+}
+
+.put .about p {
+  font-size: 17px;
+ 
+}
+
+.put h2 {
+  font-size: 33px;
+}
+
+.put .about h3 {
+  font-size: 28px;
+}
+
+.put .about a {
+  font-size: 15px;
+  padding: 11px 10px;
+}
+
+.conter p {
+  font-size: 21px;
+}
+
+.conter .image-section {
+  height: 82px;
+  width: 82px;
+ 
+}
+
+.conter a {
+  font-size: 14px;
+  padding: 6px 13px;
+ 
+}
+
+.services p {
+  font-size: 23px;
+ 
+}
+
+.services h5 {
+  font-size: 32px;
+
+}
+
+.services a {
+  font-size: 16px;
+  padding: 10px; 
+}
+.contact h3 {
+  font-size: 36px;
+
+}
+
+
+
+
+.contact p {
+  font-size: 21px;
+}
+}
+
 @media only screen and  (min-width: 1400px)  and  (max-width: 1540px) {
 
   .banner .logo {
