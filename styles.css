@@ -65,7 +65,7 @@ body {
 .hamburger.active .line:nth-child(1) {
   top: 50%;
   transform: rotate(45deg) translate(20%, -50%);
-  transition: 0.2s ease;
+  transition: 0.9s ease;
 }
 
 .hamburger.active .line:nth-child(2) {
@@ -77,7 +77,7 @@ body {
 
 .hamburger.active .line:nth-child(3) {
   opacity: 0;
-  transition: 0.6s;
+  transition: 0.9s;
 }
 
 .nav-links {
@@ -88,7 +88,7 @@ body {
   flex-direction: column;
   clip-path: circle(1000px at 90% 10%);
   -webkit-clip-path: circle(100px at 90% -20%);
-  transition: all 2s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .nav-links.open {
@@ -159,19 +159,21 @@ body {
   transform: translateX(10rem);
 }
 .banner .wiw {
-  height: 267px;
-  width: 255px;
+  height: 257px;
+  width: 245px;
   -o-object-fit: contain;
   object-fit: cover;
   margin-top: 35px;
   border-radius: 50%;
+  max-width: 100%;
 }
 .banner h1 {
-  font-size: 40px;
+  font-size: 34px;
   margin-top: 70px;
   padding-bottom: 28px;
   line-height: 1, 8;
   font-family: "JosefinSans-Regular";
+  width: 100%;
 }
 .banner h1 span {
   color: #742296;
@@ -286,7 +288,7 @@ body {
 
 .conter {
   height: 235px;
-  width: 149px;
+  width: 24%;
   border: 2px solid;
   border-left-color: #0cf;
   border-right-color: #0cf;
@@ -552,13 +554,12 @@ p {
   border: 1px solid #742296;
   width: 131px;
   margin: -16px 0 25px 0;
+  padding: 0;
 }
 .contact p {
   font-size: 15px;
   font-family: "JosefinSans-Regular";
-}
-.contact .info {
-  margin-bottom: -20px;
+  padding: 0;
 }
 .contact .info .fonti {
   font-size: 13px;
@@ -571,8 +572,8 @@ p {
   justify-content: space-between;
 }
 .contact .icons i {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid #742296;
   display: inline-flex;
@@ -857,6 +858,29 @@ p {
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
+  banner .banner .wiw {
+    height: 255px;
+    width: 255px;
+  }
+  .banner h1 {
+    font-size: 35px;
+  }
+  .put .about p {
+    font-size: 9px;
+    width: 98%;
+  }
+  .conter {
+    height: 228px;
+    width: 141px;
+  }
+  .services .card {
+    width: 31.3%;
+    height: 33vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 @media only screen and (min-width: 1400px) and (max-width: 1540px) {
   .banner .logo {
     height: 10vh;
@@ -876,7 +900,7 @@ p {
     margin-top: 32px;
   }
   .banner {
-    padding: 45px 40px 68px 46px;
+    padding: 45px 40px 68px 40px;
     background-color: #000;
   }
   .banner .kill {
@@ -943,25 +967,31 @@ p {
     height: 16vh;
   }
   .services .card {
-    width: 28.3%;
-    height: 31vh;
+    width: 33.3%;
+    height: 36vh;
   }
   .services h2 {
     font-size: 34px;
   }
+  .services p {
+    font-size: 27px;
+    margin-bottom: 28px;
+  }
   .services h2 .line1 {
     width: 121px;
+  }
+  .services h5 {
+    font-size: 36px;
+    margin-top: 7px;
   }
   .contact p {
     font-size: 20px;
   }
   .contact h3 {
     font-size: 39px;
-    margin-left: 9px;
   }
   .contact .line {
     width: 212px;
-    margin-left: 9px;
   }
   .contact input {
     width: 138%;
@@ -969,9 +999,12 @@ p {
     margin: 4px 0;
   }
   .contact a {
-    font-size: 23px;
     width: 110%;
     padding: 10px 25px;
+  }
+  .contact .fill {
+    font-size: 15px;
+    padding: 7px 14px;
   }
   .input {
     width: 111%;
@@ -988,9 +1021,13 @@ p {
   .contact .form-control {
     width: 127%;
   }
+  .contact .form-control {
+    padding: 8px 100px 8px 7px;
+  }
   .contact textarea {
     width: 130%;
     font-size: 14px;
+    padding: 3px 1px 19px 2px;
   }
   .footer h4 {
     font-size: 12px;
