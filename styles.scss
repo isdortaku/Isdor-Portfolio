@@ -1276,7 +1276,7 @@ object-fit: cover;
 
 .services .card {
     width: 28.3%;
-    height: 46vh;
+    height: 410px;
     
 }
 
@@ -1330,7 +1330,7 @@ object-fit: cover;
     width: 129%;
     font-size: 16px;
     margin: 11px 0 7px 0;
-    padding: 1px 1px 16px 1px;
+    padding: 1px 1px 25px 1px;
 }
 
     .contact .fill {
@@ -1357,6 +1357,23 @@ object-fit: cover;
 .banner {
     padding: 48px 40px 87px 40px;
     background-color: #000;
+}
+
+    .services .card {
+        
+        height: 410px;
+    }
+    
+    .graft h2 {
+    font-size: 37px;
+    }
+
+    .services h2 {
+    font-size: 36px;
+    }
+
+.services h2 .line1 {
+    width: 128px;
 }
 
 }
