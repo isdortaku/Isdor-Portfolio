@@ -1262,7 +1262,41 @@ object-fit: cover;
 .contact p {
   font-size: 21px;
 }
+
+.conter {
+    height: 396px;
+    width: 24%;
+    
 }
+
+.services .card {
+    width: 28.3%;
+    height: 46vh;
+    
+}
+
+.contact .form-control {
+    display: block;
+    width: 128%;  
+}
+
+.contact textarea {
+    resize: vertical;
+    width: 117%;
+}
+
+.contact .fill {
+    font-size: 14px;
+    color: white;
+    padding: 9px 21px;
+    width: 120%;
+}
+
+.footer h4 {
+    font-size: 12px;
+}
+}
+
 
 @media only screen and  (min-width: 1400px)  and  (max-width: 1540px) {
 
