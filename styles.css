@@ -699,4 +699,347 @@ p {
   font-size: 10px;
   font-family: "JosefinSans-Regular";
   margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  .hamburger {
+    right: 8%;
+    top: 8%;
+    display: flex;
+    flex-direction: column;
+  }
+  .line {
+    width: 28px;
+    height: 2px;
+    background: white;
+    margin: 3px;
+  }
+  .banner {
+    padding: 25px 20px 50px 20px;
+  }
+  .banner .navi a {
+    display: none;
+  }
+  .banner .wiw {
+    display: flex;
+    margin: auto;
+    margin-top: 38px;
+  }
+  .banner .name {
+    flex-direction: column;
+  }
+  .banner h1 {
+    font-size: 30px;
+    margin-top: 32px;
+    padding-bottom: 28px;
+  }
+  .put .about {
+    padding: 0 20px 25px;
+  }
+  .put .about p {
+    font-size: 14px;
+    width: 95%;
+  }
+  .put h2 {
+    padding: 8px 20px 24px 20px;
+  }
+  .conter {
+    height: 235px;
+    width: 45%;
+    margin: 0px 0px 11px 11px;
+  }
+  .graft {
+    padding: 50px 20px;
+  }
+  .services {
+    padding: 30px 20px 30px 20px;
+  }
+  .cards-wraper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .services .card {
+    width: 99.3%;
+    height: 48vh;
+    margin-bottom: 22px;
+  }
+  .services p {
+    font-size: 17px;
+  }
+  .services h5 {
+    font-size: 21px;
+    padding-top: 0px;
+  }
+  .services a {
+    font-size: 16px;
+    padding: 7px;
+  }
+  .contact {
+    padding: 25px 20px;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact .info {
+    margin-bottom: -20px;
+    margin-left: -47px;
+  }
+  .contact form {
+    padding: 23px 0px;
+  }
+  .contact .form-control {
+    font-size: 19px;
+  }
+  .contact .info {
+    margin-left: -100px;
+  }
+  .contact textarea {
+    font-size: 19px;
+    padding: 3px 10px;
+    margin-bottom: 6px;
+  }
+  .contact h3 {
+    margin-left: 0px;
+  }
+  .contact .line {
+    margin: -16px 0 25px 0px;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact textarea {
+    font-size: 16px;
+    padding: 3px 0px;
+    margin-bottom: 6px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .services .card {
+    width: 31.3%;
+    height: 59vh;
+  }
+  .services .card {
+    width: 31.3%;
+    height: 36vh;
+  }
+  .contact .info {
+    margin-left: 0px;
+    padding-right: 50px;
+    margin-bottom: -65px;
+  }
+  .services .card {
+    width: 32.3%;
+    height: 29vh;
+    margin-bottom: 12px;
+  }
+  .services .photos {
+    width: 100%;
+    height: 12vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .services p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+  banner .banner .wiw {
+    height: 255px;
+    width: 255px;
+  }
+  .banner h1 {
+    font-size: 35px;
+  }
+  .put .about p {
+    font-size: 9px;
+    width: 98%;
+  }
+  .conter {
+    height: 228px;
+    width: 141px;
+  }
+  .services .card {
+    width: 31.3%;
+    height: 33vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .banner .logo {
+    height: 10vh;
+    width: 206px;
+  }
+  .banner .navi a {
+    padding: 8px;
+    font-size: 26px;
+  }
+  .banner h1 {
+    font-size: 50px;
+    margin-top: 108px;
+  }
+  .banner .wiw {
+    height: 350px;
+    width: 350px;
+    margin-top: 32px;
+  }
+  .banner {
+    padding: 45px 40px 68px 40px;
+    background-color: #000;
+  }
+  .banner .kill {
+    font-size: 25px;
+    padding: 16px 28px;
+  }
+  .banner .gud {
+    font-size: 25px;
+    padding: 16px 17px;
+  }
+  .put .about p {
+    font-size: 18px;
+    width: 85%;
+    margin-bottom: 40px;
+  }
+  .put .about .org {
+    height: 332px;
+    width: 331px;
+  }
+  .put h2 {
+    font-size: 30px;
+    padding: 44px 40px 30px 40px;
+  }
+  .put .about a {
+    font-size: 18px;
+    padding: 9px 12px;
+  }
+  .put .about h3 {
+    font-size: 24px;
+    font-family: "JosefinSans-Regular";
+  }
+  .conter {
+    height: 317px;
+    width: 260px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .nice {
+    font-size: 37px;
+  }
+  .conter img {
+    width: 73px;
+  }
+  .graft h2 {
+    font-size: 40px;
+  }
+  .graft {
+    padding: 60px 40px;
+  }
+  .services p {
+    font-size: 21px;
+  }
+  .services h5 {
+    font-size: 28px;
+    margin-top: 7px;
+  }
+  .services a {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .services .photos {
+    width: 100%;
+    height: 16vh;
+  }
+  .services .card {
+    width: 33.3%;
+    height: 42vh;
+  }
+  .services h2 {
+    font-size: 34px;
+  }
+  .services p {
+    font-size: 27px;
+    margin-bottom: 28px;
+  }
+  .services h2 .line1 {
+    width: 121px;
+  }
+  .services h5 {
+    font-size: 36px;
+    margin-top: 7px;
+  }
+  .contact p {
+    font-size: 20px;
+  }
+  .contact h3 {
+    font-size: 39px;
+  }
+  .contact .line {
+    width: 212px;
+  }
+  .contact input {
+    width: 138%;
+    padding: 8px;
+    margin: 4px 0;
+  }
+  .contact a {
+    width: 110%;
+    padding: 10px 25px;
+  }
+  .contact .fill {
+    font-size: 15px;
+    padding: 7px 14px;
+  }
+  .input {
+    width: 111%;
+    padding: 17px;
+  }
+  .contact .info {
+    margin-left: 1px;
+    padding-right: 50px;
+    margin-bottom: 0px;
+  }
+  .contact {
+    padding: 30px 40px;
+  }
+  .contact .form-control {
+    width: 127%;
+  }
+  .contact .form-control {
+    padding: 8px 100px 8px 7px;
+  }
+  .contact textarea {
+    width: 130%;
+    font-size: 14px;
+    padding: 3px 1px 19px 2px;
+  }
+  .footer h4 {
+    font-size: 12px;
+  }
+  .contact form {
+    padding: 34px 80px;
+  }
+  .contact textarea {
+    resize: vertical;
+    width: 129%;
+    font-size: 16px;
+    margin: 11px 0 7px 0;
+    padding: 1px 1px 25px 1px;
+  }
+  .contact .fill {
+    font-size: 16px;
+    padding: 9px 81px;
+    width: 129%;
+  }
+  .contact .line {
+    width: 192px;
+  }
+  .contact .form-control {
+    padding: 9px 138px 9px 7px;
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */
