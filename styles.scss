@@ -1295,6 +1295,65 @@ object-fit: cover;
 .footer h4 {
     font-size: 12px;
 }
+
+.services .photos {
+    width: 100%;
+    height: 19vh;
+}
+
+    .services .card {
+        height: 40vh;
+    }
+
+  .conter {
+    height: 406px;
+    width: 20%;  
+   }
+
+    .conter p {
+        font-size: 24px;
+    }
+
+.contact form {
+    padding: 34px 80px;
+}
+
+    
+
+    .contact textarea {
+    resize: vertical;
+    width: 129%;
+    font-size: 16px;
+    margin: 11px 0 7px 0;
+    padding: 1px 1px 16px 1px;
+}
+
+    .contact .fill {
+        font-size: 16px;
+        padding: 9px 81px;
+        width: 129%;
+    }
+
+    .contact .line {
+    width: 192px;  
+}
+
+.contact .form-control {
+    padding: 7px 78px 8px 7px;
+    font-size: 15px;
+    
+}
+
+.banner .logo {
+    height: 8vh;
+    width: 148px;
+}
+
+.banner {
+    padding: 48px 40px 87px 40px;
+    background-color: #000;
+}
+
 }
 
 
