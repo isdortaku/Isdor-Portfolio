@@ -1176,7 +1176,7 @@ object-fit: cover;
 }
 
 
-@media only screen and (min-width: 1025px) and (max-width: 1366px){
+@media only screen and (min-width: 1366px) and (max-width: 1400px){
 
   .banner h1 {
     // font-size: 44px;
@@ -1361,7 +1361,7 @@ object-fit: cover;
 
     .services .card {
         
-        height: 370px;
+        height: 40vh;
     }
     
     .graft h2 {
@@ -1379,7 +1379,7 @@ object-fit: cover;
 }
 
 
-@media only screen and  (min-width: 1400px)  and  (max-width: 1540px) {
+@media only screen and  (min-width: 1401px)  and  (max-width: 1540px) {
 
   .banner .logo {
     height: 10vh;
