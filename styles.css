@@ -182,9 +182,10 @@ body {
   text-decoration: none;
   color: white;
   padding: 7px 10px;
-  border: 1px solid #742296;
+  border: 2px solid #742296;
   margin-top: 10px;
-  border-radius: 5%;
+  border-radius: 5px;
+  background-color: #742296;
   font-family: "JosefinSans-Regular";
 }
 .banner .kill {
@@ -529,51 +530,37 @@ p {
   justify-content: center;
 }
 
-.contact {
+.contact-content {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  padding: 10px 40px;
-  background-color: black;
-  -o-object-fit: contain;
-     object-fit: contain;
-  color: white;
+  padding: 10px 40px 40px 40px;
+  flex-wrap: wrap;
 }
-.contact h3 {
+
+.contact .contact-content .left p {
+  text-align: justify;
+  font-size: 12px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.sero {
+  margin-left: 40px;
+  margin-bottom: 0;
+  margin-top: 40px;
+  font-family: "JosefinSans-Regular";
   font-size: 24px;
-  padding-bottom: 15px;
-  font-family: "JosefinSans-Regular";
-  margin-bottom: 0px;
-  font-weight: bold;
+  font-weight: bolder;
 }
-.contact h3 span {
-  color: #742296;
-}
-.contact .line {
-  background-color: #742296;
-  border: 1px solid #742296;
-  width: 131px;
-  margin: -16px 0 25px 0;
-  padding: 0;
-}
-.contact p {
-  font-size: 15px;
-  font-family: "JosefinSans-Regular";
-  padding: 0;
-}
-.contact .info .fonti {
-  font-size: 13px;
-  font-family: "GreatVibes-Regular-webfont";
-  color: white;
-}
-.contact .icons {
+
+.icons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
 }
-.contact .icons i {
-  width: 50px;
-  height: 50px;
+.icons i {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid #742296;
   display: inline-flex;
@@ -581,112 +568,141 @@ p {
   align-items: center;
   margin: 2px;
 }
-.contact .form {
-  width: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-}
-.contact .contact-form {
-  position: relative;
-}
-.contact .circle {
-  border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
-  position: absolute;
-}
-.contact .circle.two {
-  width: 80px;
-  height: 80px;
-  top: 10px;
-  right: 30px;
-}
-.contact .contact-form:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  background-color: #1abc9c;
-  transform: rotate(45deg);
-  top: 50px;
-  left: -13px;
-}
-.contact form {
-  padding: 30px 22px;
-  z-index: 10;
-  overflow: hidden;
-  position: relative;
-}
-.contact .input {
-  width: 120%;
-  outline: none;
-  border: 2px solid #fafafa;
-  background: none;
-  padding: 0px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 0.5px;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-.contact .fill {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  font-size: 13px;
-  color: white;
-  padding: 5px 14px;
-  border-radius: 2px;
-  font-family: "JosefinSans-Regular";
-  background-color: #742296;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  margin: auto;
+
+.main {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
-.contact a:hover {
-  background: #0cf;
-  color: white;
-  box-shadow: 0 0 10px #0cf;
-  border: none;
+
+.poke {
+  margin-left: 10px;
+  font-size: 19px;
 }
-.contact .form-control {
-  display: block;
-  width: 100%;
-  padding: 5px 78px 5px 7px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  margin-top: -8px;
+
+.kin {
+  font-family: "JosefinSans-Regular";
 }
-.contact textarea {
-  resize: vertical;
+
+input, textarea {
+  caret-color: red;
+}
+
+.contact .title::after {
+  content: "get in touch";
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: crimson;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+  color: #333;
+}
+
+.contact .right form .fields {
+  display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
   width: 100%;
-  font-size: 14px;
-  margin: 11px 0 7px 0;
-  padding: 4px 1px 20px 8px;
-  border: none;
+  margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.contact .right form .name {
+  margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
   border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
 }
-.contact .square {
-  position: absolute;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(181%, 11%);
-  opacity: 0.2;
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact .right form .button-area {
+  display: flex;
+  align-items: center;
+}
+
+.right form .button-area button {
+  color: black;
+  display: block;
+  width: 132px !important;
+  height: 35px;
+  outline: none;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  border: 2px solid #742296;
+  transition: all 0.3s ease-in-out;
+}
+
+.right form .button-area button:hover {
+  color: white;
+  background: #0cf;
+  border: none;
+}
+
+.fame {
+  margin-bottom: 0;
 }
 
 .footer {
@@ -778,8 +794,19 @@ p {
     font-size: 16px;
     padding: 7px;
   }
-  .contact {
-    padding: 25px 20px;
+  .contact-content {
+    padding: 10px 20px 20px 20px;
+    flex-direction: column;
+  }
+  .contact form {
+    width: 240%;
+  }
+  .sero {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+  .contact .contact-content .left p {
+    width: 243%;
   }
   .contact {
     flex-direction: column;
@@ -818,10 +845,13 @@ p {
     margin: 11px 0 7px 0;
     padding: 4px 1px 20px 0px;
   }
+  .contact .contact-content .left p {
+    font-size: 11px;
+  }
 }
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
   .banner {
-    padding: 72px 68px 115px 40px;
+    padding: 59px 68px 115px 40px;
     background-color: #000;
   }
   .banner h1 {
@@ -891,30 +921,29 @@ p {
     height: 396px;
     width: 24%;
   }
-  .contact .form-control {
-    display: block;
-    width: 128%;
+  .services .card {
+    width: 28.3%;
+    height: 410px;
   }
-  .contact textarea {
-    resize: vertical;
-    width: 117%;
+  .contact .contact-content .left p {
+    font-size: 17px;
   }
-  .contact .fill {
-    font-size: 14px;
-    color: white;
-    padding: 9px 21px;
-    width: 120%;
+  .sero {
+    font-size: 37px;
   }
-  .footer h4 {
-    font-size: 12px;
-  }
-  .services .photos {
-    width: 100%;
-    height: 200px;
+  .icons i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #742296;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
   }
   .services .card {
     width: 28.3%;
-    height: 420px;
+    height: 380px;
   }
   .conter {
     height: 406px;
@@ -922,28 +951,6 @@ p {
   }
   .conter p {
     font-size: 24px;
-  }
-  .contact form {
-    padding: 34px 80px;
-  }
-  .contact textarea {
-    resize: vertical;
-    width: 129%;
-    font-size: 16px;
-    margin: 11px 0 7px 0;
-    padding: 1px 1px 79px 1px;
-  }
-  .contact .fill {
-    font-size: 16px;
-    padding: 9px 81px;
-    width: 129%;
-  }
-  .contact .line {
-    width: 192px;
-  }
-  .contact .form-control {
-    padding: 9px 166px 21px 7px;
-    font-size: 15px;
   }
   .banner .logo {
     height: 8vh;
