@@ -104,6 +104,55 @@ body {
   font-size: 25px;
 }
 
+h1 {
+  color: white;
+  animation: text 4s 1;
+  animation-name: text;
+  animation-duration: 4s;
+  animation-iteration-count: twice;
+}
+
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 10px;
+    margin-bottom: -40px;
+  }
+}
+.navi a:before, .navi a:after {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #0277bd;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  border-radius: 50%;
+  background: red;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.navi a:after {
+  border-width: 2px;
+  transition: all 0.4s;
+}
+
+.navi a:hover:before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.navi a:hover:after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
 .banner {
   padding: 25px 40px 50px 40px;
   background-color: #000;
