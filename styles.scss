@@ -681,6 +681,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: start;
+    gap: 12px;
     
 
     i{
@@ -1153,7 +1154,7 @@ input,textarea
 // }
 
 
-@media only screen and (min-width: 1366px) and (max-width: 1600px){
+@media only screen and (min-width: 1200px) {
 
   .banner {
     padding: 59px 68px 115px 40px;
@@ -1268,9 +1269,46 @@ input,textarea
 
 }
 
+
+.contact .right form .field input, .contact .right form .textarea textarea {
+  // height: 124%;
+  // width: 100%;
+  height: 57px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  
+}
+
 .sero {
   font-size: 37px;
 }
+
+.right form .button-area button {
+  margin-top: 30px;
+}
+
+.field, .contact .right form .fields .field {
+  height: 57px;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.contact .right form .field input, .contact .right form .textarea textarea {
+  height: 78px;
+  width: 100%;
+  margin-bottom: -93px;
+  padding: 10px;
+}
+
+
+
 
 .icons i {
   width: 40px;
@@ -1321,6 +1359,13 @@ input,textarea
 
 .footer h4 {
   font-size: 14px;
+}
+
+.services .photos {
+  width: 100%;
+  height: 161px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 }
