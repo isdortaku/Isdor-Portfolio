@@ -858,29 +858,6 @@ input,textarea
 
   
 
-// @media (max-width: 475.98px) {
-
- 
-
-// .hamburger{
-//   right: 5%;
-//   top: 9%;
-//   display: flex;
-// }
-
-// .nav-links {
-//   height: 86vh;
-//   width: 94%;
-// }
-
-// .contact .info {
-//   margin-left: -37px;
-// }
-
-// .services .card {
-//   margin-bottom: 52px;
-// }
-// }
 
 @media (max-width: 575.98px) {
 
@@ -933,7 +910,7 @@ input,textarea
 }
 
 .put .about p {
-  font-size: 14px;
+  font-size: 15px;
   width: 95%;
  
 }
@@ -1034,6 +1011,13 @@ input,textarea
   
 }
 
+.icons {
+  gap: 1px;
+}
+
+.contact .contact-content .left p {
+  font-size: 15px;
+}
 .contact .form-control {
   font-size: 19px;
   
@@ -1112,46 +1096,6 @@ input,textarea
 }
 
 }
-
-// @media only screen and (min-width: 993px) and (max-width: 1024px){
-
-//   banner//
-
-//   .banner .wiw {
-//     height: 255px;
-//     width: 255px;
-   
-// }
-
-// .banner h1 {
-//   font-size: 35px;
-// }
-
-// // about 
-
-// .put .about p {
-//   font-size: 9px;
-//   width: 98%;
-
-// }
-
-// // skills 
-// .conter {
-// height: 228px;
-// width: 141px;
-
-// }
-
-
-// // cards 
-
-// .services .card {
-// width: 31.3%;
-// height: 33vh;
-// object-fit: cover;
-// }
-
-// }
 
 
 @media only screen and (min-width: 1200px) {
@@ -1271,43 +1215,24 @@ input,textarea
 
 
 .contact .right form .field input, .contact .right form .textarea textarea {
-  // height: 124%;
-  // width: 100%;
-  height: 57px;
+  height: 124%;
   width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 6px;
-  outline: none;
-  padding: 0 15px;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  transition: all 0.3s ease;
-  margin-bottom: 20px;
-  
+  // margin-bottom: -93px;
 }
+
 
 .sero {
   font-size: 37px;
 }
 
 .right form .button-area button {
-  margin-top: 30px;
-}
-
-.field, .contact .right form .fields .field {
-  height: 57px;
-  width: 100%;
-  margin-bottom: 36px;
-}
-
-.contact .right form .field input, .contact .right form .textarea textarea {
-  height: 78px;
-  width: 100%;
-  margin-bottom: -93px;
-  padding: 10px;
+  margin-top: 15px;
 }
 
 
+.contact .contact-content .left p {
+  font-size: 19px;
+}
 
 
 .icons i {
@@ -1366,6 +1291,14 @@ input,textarea
   height: 161px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.juk{
+   padding: 0px 49px;
+   }
+
+   .contact .right form .field, .contact .right form .fields .field {
+    margin-bottom: 24px;
 }
 
 }
