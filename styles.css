@@ -845,6 +845,10 @@ input, textarea {
   margin-bottom: 0;
 }
 
+.lilo {
+  widt: 100px;
+}
+
 @media (max-width: 575.98px) {
   .hamburger {
     right: 8%;
