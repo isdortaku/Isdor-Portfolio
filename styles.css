@@ -844,9 +844,8 @@ input, textarea {
   font-family: "JosefinSans-Regular";
   margin-bottom: 0;
 }
-
-.k i {
-  font-size: o;
+.footer section .title span {
+  margin-left: -33px;
 }
 
 @media (max-width: 575.98px) {
@@ -1165,4 +1164,8 @@ input, textarea {
   section .title span {
     font-size: 37px;
   }
+
+  section .title span {
+    margin-left: -74px;
+}
 }/*# sourceMappingURL=styles.css.map */
