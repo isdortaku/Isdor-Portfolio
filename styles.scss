@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 // admim@uncommon24!
 
 @font-face{
@@ -197,6 +198,8 @@ h1 {
 
 .banner{
     padding: 25px 40px 50px 40px;
+    height: 100vh;
+    width: 100%;
     background-color: #000;
     
 
@@ -249,7 +252,7 @@ h1 {
         box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
         transition: 0.2s;
       }
-
+ 
       a:not(:first-child) {
         margin-top:45px;
         transition: 0.2s;
@@ -322,80 +325,134 @@ h1 {
 
 
 
- //   about us page
-.put{
-  padding: 30px 0;
-    background-color:#090910;
 
-    h2{
-        font-size: 24px;
-        padding: 35px 40px 30px 40px;
-        margin-bottom: 0px;
-        font-family: "JosefinSans-Regular";
-        font-weight: bold;
-        color: white;
-            
-     }
+/* About Section Styling */
 
-    
-    
-.about{
-    padding: 0 40px 40px;
-    color: white;
-
-
-    
-
-     
-         h3{
-            font-size: 24px;
-            padding-bottom: 15px;
-            font-family: "JosefinSans-Regular";
-        }
-
-        span{
-            color: #742296;
-        }
-         p{
-            font-size: 13px;
-             width: 83.5%;
-            padding: 0px;
-            font-family: "JosefinSans-Regular";
-            margin-bottom: 25px;
-        }
-
-        a{
-            text-decoration: none;
-            font-size: 13px;
-            color: white;
-            padding: 5px 10px;
-            margin-top: 10px;
-            border-radius: 2px;
-            font-family: "JosefinSans-Regular";
-            background-color: #742296;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-
-            span{
-                color: #fff;
-                font-weight: bolder;
-            }
-        }
-
-        a:hover{
-            background: #0cf;
-            color: white;
-            box-shadow: 0 0 10px #0cf;
-            border: none;
-          }
-
-      
-
- }
-
+section .content{
+  width:80%;
+  font-family: 'Poppins', sans-serif;
+  margin: 50px auto;
 
 }
+section .title{
+  margin-bottom: 40px;
+}
+
+.topic{
+  margin-bottom: 20px;
+}
+
+section .title span{
+  color:#000;
+  font-size: 30px;
+  font-weight: 600;
+  position:relative;
+  padding-bottom:8px;
+  margin-left: -20px;
+}
+
+section .title span::before{
+  content:'';
+  position:absolute;
+  height:3px;
+  width:100%;
+  background:var(--primary-color);
+  left:0;
+  bottom:0;
+}
+
+section .title span::after{
+  bottom:-7px;
+  width:70%;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.about .about-details{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #091618;
+  padding: 30px;
+}
+
+.drill{
+  border-top: 2px solid #742296;
+  border-bottom: 2px solid #742296;
+  border-right: 2px solid #0277bd;
+  border-left: 2px solid #0277bd;
+  padding: 10px;
+
+  h5{
+    color: white;
+  }
+}
+.drill:hover {
+ background-color: #0cf;
+ rotate: 20deg;
+ transition: all 4s;
+
+ h5{
+ color: #fff;
+ }
+}
+
+
+
+.about .about-details .left{
+  width:45%;
+}
+
+.about .left img{
+  height:360px;
+  width:300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about .about-details .right{
+  width:55%;
+}
+section .topic{
+  color:white;
+  font-family: "JosefinSans-Regular";
+  font-size:25px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.faint {
+  text-align: justify;
+  font-family: "JosefinSans-Regular";
+  color: white;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.about-details .right p{
+  text-align: justify;
+  color:white;;
+}
+section .button{
+  margin:16px 0;
+}
+section .button button{
+  outline:none;
+  font-family: "JosefinSans-Regular";
+  padding:5px 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 400;
+  background: #742296;
+  color:white;
+  border:none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+section .button button:hover{
+  background-color: #0277bd;
+  color:white;
+}
+
 // skills
 
 .graft{
@@ -963,24 +1020,23 @@ input,textarea
 }
 
 // about us
-
-.put .about {
-  padding: 0 20px 25px;
-
+.about .about-details {
+  padding: 14px;
+  flex-direction: column-reverse;
+  align-items: baseline;
 }
 
-.put .about p {
-  font-size: 15px;
-  width: 95%;
- 
+.about-details .right p {
+  width: 262px;
+  font-size: 13px;
+  margin-bottom: 31px;
 }
 
 
-
-.put h2 {
-  padding: 8px 20px 24px 20px;
+.drill {
+  padding: 15px;
+  margin-top: 20px;
 }
-
 // skills
 .conter {
   height: 235px;
@@ -1143,7 +1199,9 @@ input,textarea
 // font-size: 14px;
 
 // }
-
+.banner {
+  height: 46vh;
+}
 
 .contact textarea {
   margin: 11px 0 7px 0;
@@ -1362,3 +1420,49 @@ input,textarea
 }
 
 }
+
+@media only screen and (min-width: 1366px) {
+  .banner .wiw {
+    height: 425px;
+    width: 425px;
+    margin-top: 62px;
+}
+
+.banner h1 {
+  font-size: 65px;
+  margin-top: 122px;
+  margin-bottom: 31px;
+}
+
+.banner .gud {
+  padding: 16px 13px;
+  font-size: 20px;
+}
+
+.about-details .right p {
+  font-size: 19px;
+}
+
+section .topic {
+  font-size: 45px;
+}
+
+.drill h5 {
+  font-size: 34px;
+}
+
+section .button button {
+  padding: 10px 21px;
+  font-size: 18px;
+  
+}
+
+section .title span {
+  font-size: 37px;
+}
+
+
+
+}
+
+

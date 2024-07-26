@@ -155,6 +155,8 @@ h1 {
 
 .banner {
   padding: 25px 40px 50px 40px;
+  height: 100vh;
+  width: 100%;
   background-color: #000;
 }
 .banner .navigation {
@@ -254,59 +256,133 @@ h1 {
   border: none;
 }
 
-.put {
-  padding: 30px 0;
-  background-color: #090910;
+/* About Section Styling */
+section .content {
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  margin: 50px auto;
 }
-.put h2 {
-  font-size: 24px;
-  padding: 35px 40px 30px 40px;
-  margin-bottom: 0px;
-  font-family: "JosefinSans-Regular";
-  font-weight: bold;
+
+section .title {
+  margin-bottom: 40px;
+}
+
+.topic {
+  margin-bottom: 20px;
+}
+
+section .title span {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+  margin-left: -20px;
+}
+
+section .title span::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--primary-color);
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #091618;
+  padding: 30px;
+}
+
+.drill {
+  border-top: 2px solid #742296;
+  border-bottom: 2px solid #742296;
+  border-right: 2px solid #0277bd;
+  border-left: 2px solid #0277bd;
+  padding: 10px;
+}
+.drill h5 {
   color: white;
 }
-.put .about {
-  padding: 0 40px 40px;
-  color: white;
+
+.drill:hover {
+  background-color: #0cf;
+  rotate: 20deg;
+  transition: all 4s;
 }
-.put .about h3 {
-  font-size: 24px;
-  padding-bottom: 15px;
-  font-family: "JosefinSans-Regular";
-}
-.put .about span {
-  color: #742296;
-}
-.put .about p {
-  font-size: 13px;
-  width: 83.5%;
-  padding: 0px;
-  font-family: "JosefinSans-Regular";
-  margin-bottom: 25px;
-}
-.put .about a {
-  text-decoration: none;
-  font-size: 13px;
-  color: white;
-  padding: 5px 10px;
-  margin-top: 10px;
-  border-radius: 2px;
-  font-family: "JosefinSans-Regular";
-  background-color: #742296;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-.put .about a span {
+.drill:hover h5 {
   color: #fff;
-  font-weight: bolder;
 }
-.put .about a:hover {
-  background: #0cf;
+
+.about .about-details .left {
+  width: 45%;
+}
+
+.about .left img {
+  height: 360px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
+.about .about-details .right {
+  width: 55%;
+}
+
+section .topic {
   color: white;
-  box-shadow: 0 0 10px #0cf;
+  font-family: "JosefinSans-Regular";
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.faint {
+  text-align: justify;
+  font-family: "JosefinSans-Regular";
+  color: white;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.about-details .right p {
+  text-align: justify;
+  color: white;
+}
+
+section .button {
+  margin: 16px 0;
+}
+
+section .button button {
+  outline: none;
+  font-family: "JosefinSans-Regular";
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 400;
+  background: #742296;
+  color: white;
   border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+section .button button:hover {
+  background-color: #0277bd;
+  color: white;
 }
 
 .graft {
@@ -801,15 +877,19 @@ input, textarea {
     margin-top: 32px;
     padding-bottom: 28px;
   }
-  .put .about {
-    padding: 0 20px 25px;
+  .about .about-details {
+    padding: 14px;
+    flex-direction: column-reverse;
+    align-items: baseline;
   }
-  .put .about p {
-    font-size: 15px;
-    width: 95%;
+  .about-details .right p {
+    width: 262px;
+    font-size: 13px;
+    margin-bottom: 31px;
   }
-  .put h2 {
-    padding: 8px 20px 24px 20px;
+  .drill {
+    padding: 15px;
+    margin-top: 20px;
   }
   .conter {
     height: 235px;
@@ -897,6 +977,9 @@ input, textarea {
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+  .banner {
+    height: 46vh;
+  }
   .contact textarea {
     margin: 11px 0 7px 0;
     padding: 4px 1px 20px 0px;
@@ -1045,5 +1128,37 @@ input, textarea {
   }
   .contact .right form .field, .contact .right form .fields .field {
     margin-bottom: 24px;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .banner .wiw {
+    height: 425px;
+    width: 425px;
+    margin-top: 62px;
+  }
+  .banner h1 {
+    font-size: 65px;
+    margin-top: 122px;
+    margin-bottom: 31px;
+  }
+  .banner .gud {
+    padding: 16px 13px;
+    font-size: 20px;
+  }
+  .about-details .right p {
+    font-size: 19px;
+  }
+  section .topic {
+    font-size: 45px;
+  }
+  .drill h5 {
+    font-size: 34px;
+  }
+  section .button button {
+    padding: 10px 21px;
+    font-size: 18px;
+  }
+  section .title span {
+    font-size: 37px;
   }
 }/*# sourceMappingURL=styles.css.map */
