@@ -844,9 +844,6 @@ input, textarea {
   font-family: "JosefinSans-Regular";
   margin-bottom: 0;
 }
-.footer section .title span {
-  margin-left: -33px;
-}
 
 @media (max-width: 575.98px) {
   .hamburger {
@@ -1164,8 +1161,8 @@ input, textarea {
   section .title span {
     font-size: 37px;
   }
-
   section .title span {
-    margin-left: -74px;
-}
+    font-size: 37px;
+    margin-left: -102px;
+  }
 }/*# sourceMappingURL=styles.css.map */
