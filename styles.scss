@@ -1334,6 +1334,7 @@ input,textarea
 .oll{
   font-size: large;
 }
+
 .contact .right form .field input, .contact .right form .textarea textarea {
   height: 124%;
   width: 100%;
@@ -1421,9 +1422,23 @@ input,textarea
     margin-bottom: 24px;
 }
 
+.drill h5 {
+  color: white;
+  font-size: large;
+}
+
 }
 
 @media only screen and (min-width: 1366px) {
+
+
+  .banner {
+    padding: 25px 40px 50px 40px;
+    height: 108vh;
+    width: 100%;
+    background-color: #000;
+}
+
   .banner .wiw {
     height: 425px;
     width: 425px;
@@ -1452,6 +1467,8 @@ section .topic {
 .drill h5 {
   font-size: 34px;
 }
+
+
 
 section .button button {
   padding: 10px 21px;

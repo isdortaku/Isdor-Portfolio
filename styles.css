@@ -1132,8 +1132,18 @@ input, textarea {
   .contact .right form .field, .contact .right form .fields .field {
     margin-bottom: 24px;
   }
+  .drill h5 {
+    color: white;
+    font-size: large;
+  }
 }
 @media only screen and (min-width: 1366px) {
+  .banner {
+    padding: 25px 40px 50px 40px;
+    height: 108vh;
+    width: 100%;
+    background-color: #000;
+  }
   .banner .wiw {
     height: 425px;
     width: 425px;
