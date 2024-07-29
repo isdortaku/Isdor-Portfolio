@@ -988,9 +988,11 @@ input, textarea {
     font-size: 11px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   .banner {
-    padding: 59px 68px 115px 40px;
+    padding: 25px 40px 50px 40px;
+    height: 38vh;
+    width: 100%;
     background-color: #000;
   }
   .banner h1 {
@@ -1060,10 +1062,6 @@ input, textarea {
     height: 396px;
     width: 24%;
   }
-  .services .card {
-    width: 28.3%;
-    height: 410px;
-  }
   .contact .contact-content .left p {
     font-size: 17px;
   }
@@ -1089,10 +1087,6 @@ input, textarea {
     justify-content: center;
     align-items: center;
     margin: 2px;
-  }
-  .services .card {
-    width: 28.3%;
-    height: 380px;
   }
   .conter {
     height: 406px;
@@ -1128,6 +1122,12 @@ input, textarea {
   }
   .contact .right form .field, .contact .right form .fields .field {
     margin-bottom: 24px;
+  }
+  .services .card {
+    width: 28.3%;
+    height: 260px;
+    border: none;
+    margin: 0 15px;
   }
 }
 @media only screen and (min-width: 1366px) {
@@ -1165,7 +1165,4 @@ input, textarea {
     font-size: 37px;
     margin-left: -102px;
   }
-}
-.namp {
-  font-family: "Courier New", Courier, monospace;
 }/*# sourceMappingURL=styles.css.map */
