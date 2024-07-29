@@ -1067,6 +1067,9 @@ input, textarea {
   .contact .contact-content .left p {
     font-size: 17px;
   }
+  .oll {
+    font-size: large;
+  }
   .contact .right form .field input, .contact .right form .textarea textarea {
     height: 124%;
     width: 100%;
