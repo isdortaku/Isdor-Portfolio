@@ -230,14 +230,22 @@ h1 {
   color: #742296;
 }
 .banner .gud {
-  text-decoration: none;
-  color: white;
-  padding: 7px 10px;
-  border: 2px solid #742296;
-  margin-top: 10px;
-  border-radius: 5px;
-  background-color: #742296;
+  outline: none;
   font-family: "JosefinSans-Regular";
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 400;
+  background: #742296;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.banner .gud:hover {
+  background-color: #0277bd;
+  color: white;
 }
 .banner .kill {
   text-decoration: none;
@@ -249,11 +257,13 @@ h1 {
   margin-left: 20px;
   font-family: "JosefinSans-Regular";
 }
-.banner a:hover {
+.banner .navi li a:hover {
   background: #0cf;
   color: white;
   box-shadow: 0 0 10px #0cf;
   border: none;
+  padding: 5px;
+  border-radius: 10px 20px;
 }
 
 /* About Section Styling */
@@ -360,6 +370,7 @@ section .topic {
 .about-details .right p {
   text-align: justify;
   color: white;
+  font-size: 10px;
 }
 
 section .button {
@@ -845,7 +856,7 @@ input, textarea {
   margin-bottom: 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 480px) {
   .hamburger {
     right: 8%;
     top: 8%;
@@ -860,6 +871,7 @@ input, textarea {
   }
   .banner {
     padding: 25px 20px 50px 20px;
+    height: 100%;
   }
   .banner .navi a {
     display: none;
@@ -978,7 +990,7 @@ input, textarea {
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .banner {
-    height: 46vh;
+    height: 100%;
   }
   .contact textarea {
     margin: 11px 0 7px 0;
@@ -992,29 +1004,115 @@ input, textarea {
     height: 250px;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    height: 100%;
+  }
+  .banner .wiw {
+    height: 230px;
+    width: 230px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .banner {
+    height: 100%;
+  }
+  .banner .wiw {
+    height: 219px;
+    width: 219px;
+  }
+  .about .about-details .right {
+    padding-left: 20px;
+  }
+}
 @media only screen and (min-width: 1366px) {
   .banner {
     padding: 25px 40px 50px 40px;
-    height: 108vh;
+    height: 104vh;
     width: 100%;
     background-color: #000;
   }
+  .banner .logo {
+    height: 18vh;
+    width: 119px;
+  }
   .banner .wiw {
-    height: 425px;
-    width: 425px;
-    margin-top: 62px;
+    height: 411px;
+    width: 411px;
+    margin-top: 38px;
   }
   .banner h1 {
-    font-size: 65px;
+    font-size: 61px;
     margin-top: 122px;
     margin-bottom: 31px;
   }
   .banner .gud {
-    padding: 16px 13px;
+    padding: 17px 34px;
+    font-size: 22px;
+  }
+  .banner .navi a {
+    font-size: 22px;
+  }
+  .conter {
+    height: 419px;
+    width: 24%;
+  }
+  .conter .image-section {
+    height: 114px;
+    width: 114px;
+  }
+  .conter:hover .image-section {
+    height: 114px;
+    width: 114px;
+  }
+  .conter p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 23px;
+  }
+  .conter a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 8px 16px;
+  }
+  .graft h2 {
+    font-size: 37px;
+  }
+  .services .photos {
+    width: 100%;
+    height: 153px;
+  }
+  .services .card {
+    width: 28.3%;
+    height: 354px;
+  }
+  .services h5 {
+    font-size: 21px;
+    padding-top: 20px;
+  }
+  .services p {
+    font-size: 21px;
+  }
+  .services a {
     font-size: 20px;
+    padding: 8px;
+  }
+  .contact .contact-content .left p {
+    text-align: justify;
+    font-size: 18px;
+  }
+  .sero {
+    font-size: 37px;
   }
   .about-details .right p {
     font-size: 19px;
+  }
+  .services h2 {
+    font-size: 37px;
+  }
+  .services h2 .line1 {
+    width: 130px;
   }
   section .topic {
     font-size: 45px;
@@ -1033,4 +1131,4 @@ input, textarea {
     font-size: 37px;
     margin-left: -102px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=syntax.css.map */

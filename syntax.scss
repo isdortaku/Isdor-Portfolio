@@ -21,7 +21,6 @@ body{
     overflow-x: hidden;
     background-color: #000;
 }
-// banner
  
 // hamburger menu 
 
@@ -39,7 +38,6 @@ body{
   .nav-links li a{
       color:white;
       border-radius: 5%;
-      // width: 40px;
       text-decoration: none;
       font-size: 15px;
       font-family: "JosefinSans-Regular";
@@ -49,10 +47,7 @@ body{
   }
   
   .nav-links li a:hover{
-      //  background-color: white;
-      // color:blue;
       padding: 3px 10px;
-      // border-radius: 20px;
       transition: 0.5s ease;
       background: #0cf;
       color: white;
@@ -291,16 +286,26 @@ h1 {
     }
 
     .gud{
-        text-decoration: none;
-        color: white;
-        padding: 7px 10px;
-        border: 2px solid #742296;
-        margin-top: 10px;
-        border-radius: 5px;
-        background-color: #742296;
+        outline:none;
         font-family: "JosefinSans-Regular";
+        text-decoration: none;
+        padding:8px 15px;
+        border-radius: 4px;
+        font-size: 17px;
+        font-weight: 400;
+        background: #742296;
+        color:white;
+        border:none;
+        cursor: pointer;
+        transition: all 0.4s ease;
         
     }
+
+    .gud:hover{
+        background-color: #0277bd;
+        color:white;
+    }
+
 
     .kill{
         text-decoration: none;
@@ -315,14 +320,15 @@ h1 {
         
     }
 
-    a:hover{
+  .navi li  a:hover{
         background: #0cf;
         color: white;
         box-shadow: 0 0 10px #0cf;
         border: none;
+        padding: 5px;
+        border-radius: 10px 20px;
       }
 }
-
 
 
 
@@ -395,6 +401,7 @@ section .title span::after{
  h5{
  color: #fff;
  }
+
 }
 
 
@@ -429,11 +436,13 @@ section .topic{
 }
 .about-details .right p{
   text-align: justify;
-  color:white;;
+  color:white;
+   font-size: 10px;
 }
 section .button{
   margin:16px 0;
 }
+
 section .button button{
   outline:none;
   font-family: "JosefinSans-Regular";
@@ -446,14 +455,15 @@ section .button button{
   border:none;
   cursor: pointer;
   transition: all 0.4s ease;
-}
+  }
 
 section .button button:hover{
   background-color: #0277bd;
   color:white;
-}
+  }
 
-// skills
+
+// // skills
 
 .graft{
     padding: 50px;
@@ -672,6 +682,7 @@ img{
   }
   
 // portfolio
+
 .services{
     padding: 30px 40px 50px 40px;
     background-color: #090910;
@@ -760,14 +771,9 @@ img{
         display: flex;
         justify-content: center;
     }
-
-    
-
-  
 }
 
-
-// //  form
+// // //  form
 
 .contact-content{
   display: flex;
@@ -953,6 +959,7 @@ input,textarea
 }
 
 // //   footer 
+
   .footer{
     display: flex;
     justify-content: center;
@@ -967,18 +974,13 @@ input,textarea
     margin-bottom: 0;
   
     }
-
-  
-
   }
 
 
-  
+  @media (max-width: 480px) {
 
-
-@media (max-width: 575.98px) {
-
-  // banner 
+    
+//   // banner 
 
   .hamburger{
     right: 8%;
@@ -996,6 +998,7 @@ input,textarea
 
   .banner {
     padding: 25px 20px 50px 20px;
+    height: 100%;
 }
 
   .banner .navi a {
@@ -1003,7 +1006,7 @@ input,textarea
 }
 
 .banner .wiw {
-  display: flex;
+    display: flex;
     margin: auto;
     margin-top: 38px;
 }
@@ -1060,12 +1063,6 @@ input,textarea
   width:100%;
 }
 
-// .services .card {
-//   width: 99.3%;
-//   height: 48vh;
-//   margin-bottom: px;
-
-// }
 
 .services .card {
   width: 100%;
@@ -1160,13 +1157,14 @@ input,textarea
   justify-content: center;
 }
 
+    
+  }
 
-}
+  @media  only screen and (min-width:576px) and (max-width: 768px) {
 
-@media only screen and (min-width:576px) and (max-width: 768px) {
-
+    
 .banner {
-  height: 46vh;
+    height: 100%;
 }
 
 .contact textarea {
@@ -1183,250 +1181,151 @@ input,textarea
   width: 28.3%;
   height: 250px;
 }
+  }
 
-}
+  @media  only screen and (min-width:769px) and (max-width: 1024px) {
 
+    .banner {
+        height: 100%;
+    }
 
-// @media only screen and (min-width: 1200px) and (max-width: 1300px)  {
-
-//   .banner {
-//     padding: 59px 68px 115px 40px;
-//     background-color: #000;
-// }
-
-//   .banner h1 {
-//     // font-size: 44px;
-//     font-size: 54px;
-//     margin-top: 105px;
-// }
-
-// .banner .wiw {
-//   height: 366px;
-//   width: 364px;
-// }
-
-
-// .banner .kill {
-//   padding: 10px 19px;
-// }
-
-
-// .banner .gud {
-//   padding: 10px 10px;
-// }
-
-// .banner .navi a {
-//   display: flex;
-//   text-decoration: none;
-//   color: white;
-//   padding: 15px;
-//   font-family: "JosefinSans-Regular";
-//   font-size: 23px;
-// }
-
-// .put .about p {
-//   font-size: 20px;
-//   margin-bottom: 38px;
- 
-// }
-
-// .put h2 {
-//   font-size: 33px;
-// }
-
-// .put .about h3 {
-//   font-size: 28px;
-// }
-
-// .put .about a {
-//   font-size: 15px;
-//   padding: 11px 10px;
-// }
-
-// .conter p {
-//   font-size: 21px;
-// }
-
-// .conter .image-section {
-//   height: 82px;
-//   width: 82px;
- 
-// }
-
-// .conter a {
-//   font-size: 14px;
-//   padding: 6px 13px;
- 
-// }
-
-// .services p {
-//   font-size: 23px;
- 
-// }
-
-// .services h5 {
-//   font-size: 32px;
-
-// }
-
-// .services a {
-//   font-size: 16px;
-//   padding: 10px; 
-// }
-// .contact h3 {
-//   font-size: 36px;
-
-// }
+    .banner .wiw {
+        height: 230px;
+        width: 230px;
+    }
+  }
 
 
 
-
-// .contact p {
-//   font-size: 21px;
-// }
-
-// .conter {
-//     height: 396px;
-//     width: 24%;
-    
-// }
-
-// .services .card {
-//     width: 28.3%;
-//     height: 410px;
-    
-// }
-
-// .contact .contact-content .left p {
-//   font-size: 17px;
-
-// }
+  @media  only screen and (min-width:1025px) and (max-width: 1280px) {
+    .banner {
+        height: 100%;
+    }
 
 
+    .banner .wiw {
+        height: 219px;
+        width: 219px;
+    }
 
-// .contact .right form .field input, .contact .right form .textarea textarea {
-//   height: 124%;
-//   width: 100%;
-//   // margin-bottom: -93px;
-// }
+    .about .about-details .right {
+        padding-left: 20px;
+    }
+  }
 
-
-// .sero {
-//   font-size: 37px;
-// }
-
-// .right form .button-area button {
-//   margin-top: 15px;
-// }
-
-
-// .contact .contact-content .left p {
-//   font-size: 19px;
-// }
-
-
-// .icons i {
-//   width: 40px;
-//   height: 40px;
-//   border-radius: 50%;
-//   border: 1px solid #742296;
-//   display: inline-flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 2px;
-// }
-
-
-//     .services .card {
-//         width: 28.3%;
-//         height: 380px;
-//     }
-
-//   .conter {
-//     height: 406px;
-//     width: 20%;  
-//    }
-
-//     .conter p {
-//         font-size: 24px;
-//     }
-
-// .banner .logo {
-//     height: 8vh;
-//     width: 148px;
-// }
-
-
-  
-    
-//     .graft h2 {
-//     font-size: 37px;
-//     }
-
-//     .services h2 {
-//     font-size: 36px;
-//     }
-
-// .services h2 .line1 {
-//     width: 128px;
-// }
-
-
-// .footer h4 {
-//   font-size: 14px;
-// }
-
-// .services .photos {
-//   width: 100%;
-//   height: 161px;
-//   -o-object-fit: cover;
-//   object-fit: cover;
-// }
-
-// .juk{
-//    padding: 0px 49px;
-//    }
-
-//    .contact .right form .field, .contact .right form .fields .field {
-//     margin-bottom: 24px;
-// }
-
-// .drill h5 {
-//   color: white;
-//   font-size: large;
-// }
-
-// }
 
 @media only screen and (min-width: 1366px) {
 
 
   .banner {
     padding: 25px 40px 50px 40px;
-    height: 108vh;
+    height: 104vh;
     width: 100%;
     background-color: #000;
 }
+.banner .logo {
+    height: 18vh;
+    width: 119px;
+}
 
-  .banner .wiw {
-    height: 425px;
-    width: 425px;
-    margin-top: 62px;
+.banner .wiw {
+    height: 411px;
+    width: 411px;
+    margin-top: 38px;
 }
 
 .banner h1 {
-  font-size: 65px;
+  font-size: 61px;
   margin-top: 122px;
   margin-bottom: 31px;
 }
 
 .banner .gud {
-  padding: 16px 13px;
-  font-size: 20px;
+    padding: 17px 34px;
+    font-size: 22px;
+}
+
+.banner .navi a {
+    font-size: 22px;
+}
+
+.conter {
+    height: 419px;
+    width: 24%;
+}
+
+.conter .image-section {
+    height: 114px;
+    width: 114px;
+}
+
+.conter:hover .image-section {
+    height: 114px;
+    width: 114px;
+}
+
+
+.conter p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 23px;
+}
+
+.conter a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 8px 16px;
+  
+}
+
+.graft h2 {
+    font-size: 37px;
+}
+
+.services .photos {
+    width: 100%;
+    height: 153px;
+}
+
+.services .card {
+    width: 28.3%;
+    height: 354px;
+}
+
+.services h5 {
+    font-size: 21px;
+    padding-top: 20px;
+}
+
+.services p {
+    font-size: 21px;
+}
+
+.services a {
+    font-size: 20px;
+    padding: 8px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.sero {
+    font-size: 37px;
 }
 
 .about-details .right p {
   font-size: 19px;
+}
+
+.services h2 {
+    font-size: 37px;
+}
+
+.services h2 .line1 {
+    width: 130px;
 }
 
 section .topic {
@@ -1455,5 +1354,3 @@ section .title span {
   margin-left: -102px;
 }
 }
-
-
