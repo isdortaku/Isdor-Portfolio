@@ -665,6 +665,10 @@ p {
   display: flex;
   justify-content: center;
 }
+.services a:hover {
+  background-color: #021a2f;
+  color: white;
+}
 
 .contact-content {
   display: flex;
