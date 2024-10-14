@@ -537,7 +537,6 @@ section .button button:hover {
 }
 
 .conter {
-  height: 220px;
   width: 40%;
   border: 2px solid;
   border-left-color: #0cf;
