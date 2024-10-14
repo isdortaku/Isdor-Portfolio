@@ -1037,7 +1037,7 @@ input,textarea
 }
 
 .right form .button-area button {
-  color: black;
+  color:#fff;
   display: block;
   width: 132px !important;
   height: 35px;
@@ -1078,71 +1078,6 @@ form{
     margin-bottom: 20px;
 }
 
-
-// @keyframes  slideInLeft {
-//     from{
-//         transform: translateX(-300px);
-//         opacity: 0;
-//     }
-
-//     to {
-//       transform:translateX(0);
-//       opacity: 1;
-//     }
-    
-// }
-
-// @keyframes  slideInright {
-//     from{
-//         transform: translateX(300px);
-//         opacity: 0;
-//     }
-
-//     to {
-//       transform:translateX(0);
-//       opacity: 1;
-//     }
-    
-// }
-
-
-// @keyframes  slideDown {
-//     from{
-//         transform: translateY(300px);
-//         opacity: 0;
-//     }
-
-//     to {
-//       transform:translateY(0);
-//       opacity: 1;
-//     }
-    
-// }
-
-
-
-
-// .main2{
-//     animation: slideDown 4s ease-in 0s 1 normal;
-//     opacity: 0;
-// }
-
-// .aboutImg{
-//     animation:slideInLeft ;
-//     animation-duration: 2s;
-//     animation-timing-function:ease-in ;
-//     animation-delay: 0s;
-//     animation-iteration-count: 1;
-//     animation-direction: normal;
-//     animation-fill-mode: forwards;
-//     transform: translateX(-150px);
-//     opacity: 0;
-// }
-
-// .about-text{
-//     animation: slideInright 2s ease-in 0s 1 normal;
-//     opacity: 0;
-// }
 
 
 @keyframes slideInLeft {
@@ -1290,11 +1225,6 @@ form{
             font-size: 2rem;
         }
 
-        .container {
-            padding: 103px 0;
-            padding-bottom: 119px;
-        }
-
 
         .main-about {
             flex-direction: column;
@@ -1305,11 +1235,6 @@ form{
           width: 163%;
           margin-left: -15%;
       }
-  
-
-        // .h2-about span {
-        //     font-size: 30px;
-        // }
 
         .counterz {
             flex-direction: column;

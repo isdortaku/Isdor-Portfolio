@@ -971,7 +971,7 @@ input, textarea {
 }
 
 .right form .button-area button {
-  color: black;
+  color: #fff;
   display: block;
   width: 132px !important;
   height: 35px;
@@ -1142,10 +1142,6 @@ form {
   }
   .main1 {
     font-size: 2rem;
-  }
-  .container {
-    padding: 103px 0;
-    padding-bottom: 119px;
   }
   .main-about {
     flex-direction: column;
