@@ -11,7 +11,7 @@
 
 @font-face{
     font-family: "Poppins-Regular";
-    src: url("/Poppins-Regular.ttf");
+    src: url("Poppins-Regular.ttf");
 }
 
 @font-face{
@@ -1301,12 +1301,15 @@ form{
         }
 
         .h2-about {
-            font-size: 30px;
-        }
+          font-size: 3rem;
+          width: 163%;
+          margin-left: -15%;
+      }
+  
 
-        .h2-about span {
-            font-size: 30px;
-        }
+        // .h2-about span {
+        //     font-size: 30px;
+        // }
 
         .counterz {
             flex-direction: column;
@@ -1346,16 +1349,22 @@ form{
         background-color: #fff;
         width: 29%;
        }
+
        .topnav {
         display: flex
       }
 
+      .services .cards-wraper {
+        flex-direction: column;
     }
 
-    .soop{
-      font-size: large;
+    .services .card1, .services .card2, .services .card3 {
+      width: 100%;
     }
-     
+
+    }
+
+  
 
     // @media (min-width:569px) and (max-width:768px){
 

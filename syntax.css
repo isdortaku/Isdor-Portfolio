@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Poppins-Regular";
-  src: url("/Poppins-Regular.ttf");
+  src: url("Poppins-Regular.ttf");
 }
 @font-face {
   font-family: "JosefinSans-Regular";
@@ -1151,10 +1151,9 @@ form {
     flex-direction: column;
   }
   .h2-about {
-    font-size: 30px;
-  }
-  .h2-about span {
-    font-size: 30px;
+    font-size: 3rem;
+    width: 163%;
+    margin-left: -15%;
   }
   .counterz {
     flex-direction: column;
@@ -1190,7 +1189,10 @@ form {
   .topnav {
     display: flex;
   }
-}
-.soop {
-  font-size: large;
+  .services .cards-wraper {
+    flex-direction: column;
+  }
+  .services .card1, .services .card2, .services .card3 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=syntax.css.map */
