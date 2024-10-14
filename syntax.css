@@ -568,6 +568,7 @@ section .button button:hover {
   text-align: center;
   align-items: center;
   font-family: "Poppins-Regular";
+  margin-bottom: 25px;
 }
 .conter img {
   width: 41px;
@@ -1157,9 +1158,18 @@ form {
     align-items: center;
   }
   .conter {
-    height: 227px;
-    width: 90%;
+    width: 38%;
     margin: 20px;
+  }
+  .counterz {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .graft {
+    padding: 0px;
   }
   form {
     padding: 16px;
@@ -1190,5 +1200,14 @@ form {
   }
   .services .card1, .services .card2, .services .card3 {
     width: 100%;
+  }
+  .sero {
+    font-size: 2rem;
+  }
+  .services h2 {
+    font-size: 2rem;
+  }
+  .graft h2 {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=syntax.css.map */
