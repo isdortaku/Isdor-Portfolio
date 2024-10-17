@@ -1230,7 +1230,7 @@ form {
     height: 46px;
   }
   .main-nav {
-    padding: 25px 59px;
+    padding: 10px 59px;
   }
   .container {
     height: 85vh;
@@ -1314,5 +1314,20 @@ form {
   .services h2 {
     font-size: 4rem;
     margin-bottom: 20px;
+  }
+  .contact .right form .field input, .contact .right form .textarea textarea {
+    height: 159%;
+    width: 100%;
+    font-size: 20px;
+  }
+  .contact .right form .fields {
+    margin: 27px 0;
+  }
+  .right form .button-area button {
+    outline: none;
+    width: 140px !important;
+    height: 45px;
+    font-size: 16px;
+    margin: 60px auto 0;
   }
 }/*# sourceMappingURL=syntax.css.map */
