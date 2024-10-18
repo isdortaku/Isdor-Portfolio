@@ -83,11 +83,11 @@ body{
   &-close {
     border: none;
     margin: auto;
-    background: #742296;
+    background: #fff;
     padding: 1rem;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 
     @media (width >= 40em) {
       display: none;
@@ -1215,7 +1215,7 @@ form{
 
         .container {
           background: #fff;
-          height: 69vh;
+          height: 80vh;
       }
 
         .main1 {
@@ -1223,6 +1223,9 @@ form{
         }
 
 
+        .footer ul {
+          font-size: 11px;
+      }
         .main-about {
             flex-direction: column;
         }
