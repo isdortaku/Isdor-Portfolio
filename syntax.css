@@ -29,7 +29,7 @@ body {
     background-color: #000;
     position: fixed;
     inset: 0;
-    padding: 1.5rem;
+    padding: 2.5rem;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
   }
@@ -37,13 +37,14 @@ body {
 @media (width < 40em) {
   .topnav-menu:target {
     transform: translateX(0);
+    z-index: 3;
   }
 }
 .topnav-links {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
 }
 @media (width < 40em) {
@@ -63,15 +64,18 @@ body {
   }
 }
 .topnav-open img {
-  width: 2.5rem;
+  width: 4.5rem;
+  height: 6vh;
   border: none;
 }
 .topnav-close {
-  display: block;
-  margin-inline-start: auto;
   border: none;
-  margin-block-end: 8rem;
-  background: none;
+  margin: auto;
+  background: #742296;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 @media (width >= 40em) {
   .topnav-close {
@@ -79,7 +83,7 @@ body {
   }
 }
 .topnav-close img {
-  width: 2.5rem;
+  width: 1.5rem;
   border: none;
 }
 .topnav-item {
@@ -718,51 +722,62 @@ p {
 }
 
 .services {
-  padding: 10px 60px 70px 60px;
+  padding: 10px 40px 70px 40px;
   background-color: #090910;
   font-family: "Poppins-Regular";
+  overflow: hidden;
 }
+
 .services h2 {
   font-size: 3rem;
   padding: 10px;
+  margin-bottom: 20px;
   font-weight: bolder;
   color: white;
   text-align: center;
   font-family: "Poppins-Regular";
 }
-.services h2 .carousel-indicators {
-  padding-top: 20px;
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
 }
-.services .card-body {
+
+.carousel-content {
+  display: flex;
+  animation: scroll 0s linear infinite;
+  width: 200%; /* Make room for two sets of cards */
+}
+
+.cards-wrapper {
+  display: flex;
+  width: 50%; /* Each wrapper takes up half the total width */
+  gap: 20px;
+}
+
+.card1, .card2, .card3 {
+  width: calc(33.333% - 20px);
   background-color: #fff;
-  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Poppins-Regular";
 }
-.services .photos {
+
+.photos {
   width: 100%;
   height: 185px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 19px;
 }
-.services .card1, .services .card2, .services .card3 {
-  width: 33%;
-  background-color: #fff;
-  margin: 10px;
-  border-radius: 10px;
-  padding: 10px;
-  font-family: "Poppins-Regular";
-}
-.services .cards-wraper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-}
-.services .card-body {
+
+.card-body {
   padding: 5px 9px;
+  background-color: #fff;
+  color: black;
 }
-.services .card-body > h5 {
+
+.card-body > h5 {
   font-size: 15px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -771,7 +786,8 @@ p {
   text-align: center;
   font-family: "Poppins-Regular";
 }
-.services .card-body > p {
+
+.card-body > p {
   font-size: 10px;
   color: #000;
   margin-bottom: 15px;
@@ -779,12 +795,8 @@ p {
   text-align: center;
   font-family: "Poppins-Regular";
 }
-.services h5 > span {
-  color: #742296;
-  font-size: 16px;
-  font-family: "Poppins-Regular";
-}
-.services .card-body > a {
+
+.card-body > a {
   text-decoration: none;
   font-size: 13px;
   color: white;
@@ -796,25 +808,23 @@ p {
   align-items: center;
   justify-content: center;
 }
-.services a:hover {
+
+.card-body > a:hover {
   background-color: #742296;
   color: white;
 }
 
-.carousel-indicators > button {
-  background-color: #0cf;
-  border-radius: 10px;
-  border: none;
-  padding: 7px 23px;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move by half the width to show the duplicate set */
+  }
 }
-
-.carousel-indicators {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  justify-content: center;
-  margin: 20px 0;
+/* Optional: Pause animation on hover */
+.carousel-content:hover {
+  animation-play-state: paused;
 }
 
 .contact-content {
@@ -1041,7 +1051,7 @@ form {
   }
 }
 /* Initially hide the elements */
-.main2, .about-img, .about-text {
+.main2, .about-img, .about-text, .hello, .sero, .juk, .puls {
   opacity: 0;
   transform: translateY(100px); /* Offset to add visual effect */
 }
@@ -1212,6 +1222,35 @@ form {
   }
   .graft h2 {
     font-size: 2rem;
+  }
+  .cards-wrapper {
+    width: 106%;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .services .card1, .services .card2, .services .card3 {
+    width: 50%;
+  }
+  .services {
+    padding: 10px 25px 70px 25px;
+  }
+  .carousel-content {
+    animation: scroll 0s linear infinite;
+  }
+  .card-body > h5 {
+    font-size: 22px;
+  }
+  .card-body > p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 569px) and (max-width: 768px) {
+  .container {
+    height: 46vh;
+  }
+  .services .photos {
+    width: 100%;
+    height: 154px;
   }
 }
 @media (min-width: 1200px) {

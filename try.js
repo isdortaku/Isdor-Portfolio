@@ -37,6 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const main2 = document.querySelector('.main2');
   const aboutImg = document.querySelector('.about-img');
   const aboutText = document.querySelector('.about-text');
+  const juk = document.querySelector('.juk');
+  const hello = document.querySelector('.hello');
+  const sero = document.querySelector('.sero');
+  const puls = document.querySelector('.puls');
+  
 
   // Set up IntersectionObserver to observe elements
   const options = {
@@ -53,7 +58,18 @@ document.addEventListener("DOMContentLoaded", () => {
                   entry.target.classList.add('animate-slide-left');
               } else if (entry.target.classList.contains('about-text')) {
                   entry.target.classList.add('animate-slide-right');
+              } else if (entry.target.classList.contains('juk')) {
+                entry.target.classList.add('animate-slide-right');
+              } else if (entry.target.classList.contains('hello')) {
+                entry.target.classList.add('animate-slide-left');
+              } else if (entry.target.classList.contains('about-text')) {
+                  entry.target.classList.add('animate-slide-right');
+              } else if (entry.target.classList.contains('sero')) {
+                entry.target.classList.add('animate-slide-left')
+              } else if (entry.target.classList.contains('puls')) {
+                entry.target.classList.add('animate-slide-left')
               }
+
           }
       });
   }, options);
@@ -62,6 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(main2);
   observer.observe(aboutImg);
   observer.observe(aboutText);
+  observer.observe(juk);
+  observer.observe(hello);
+  observer.observe(sero)
+  observer.observe(puls)
 });
 
 
@@ -77,5 +97,29 @@ document.addEventListener('DOMContentLoaded', function() {
     carousel._element.addEventListener('slide.bs.carousel', function(e) {
       e.preventDefault();
     });
+  }
+});
+
+// corusel 
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: [
+    "<i class='fa fa-caret-left'></i>",
+    "<i class='fa fa-caret-right'></i>"
+  ],
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 5
+    }
   }
 });
